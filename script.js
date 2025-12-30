@@ -147,6 +147,14 @@ const translations = {
         'about.p4': 'Wierzymy, że rację ma nie ten, kto miał ją na początku drogi, lecz ten, kto potrafił przełożyć ją na konkretne działania i wyniki. Efektywność wdrożonych działań mierzymy przede wszystkim rezultatem finansowym i większą odpornością biznesu, a nie liczbą slajdów i raportów.',
         'about.p5': 'Pomagamy łączyć tematykę ESG ze strategią i długoterminowymi celami przedsiębiorstwa, które szuka najlepszych dróg rozwoju w dynamicznie zmieniającym się otoczeniu regulacyjnym i rynkowym. Nasze doświadczenie pokazuje, że firmy, które zintegrowały ESG ze strategicznym i operacyjnym zarządzaniem biznesem, budują trwałą przewagę konkurencyjną.',
         
+        // Capabilities Section
+        'capabilities.title': 'Nasze Kompetencje',
+        'capabilities.revenue': 'Przychody Klientów',
+        'capabilities.revenue.sub': 'na rok',
+        'capabilities.projects': 'Ilość Projektów',
+        'capabilities.implementations': 'Wdrożenia',
+        'capabilities.industries': 'Branże',
+        
         // Contact Section
         'contact.title': 'Kontakt',
         'contact.email': 'Email',
@@ -314,6 +322,14 @@ const translations = {
         'about.p3': 'We base our offering on experience in managing manufacturing, trading, and service companies. We speak in simple and concrete language – without corporate jargon – focusing on practical understanding of ESG transformation challenges, finding solutions, and effectively implementing them.',
         'about.p4': 'We believe that being right is not about being right at the beginning of the journey, but about being able to translate it into concrete actions and results. We measure the effectiveness of implemented actions primarily by financial results and greater business resilience, not by the number of slides and reports.',
         'about.p5': 'We help connect ESG topics with the strategy and long-term goals of companies seeking the best development paths in a dynamically changing regulatory and market environment. Our experience shows that companies that have integrated ESG with strategic and operational business management build lasting competitive advantage.',
+        
+        // Capabilities Section
+        'capabilities.title': 'Our Capabilities',
+        'capabilities.revenue': 'Client Revenue',
+        'capabilities.revenue.sub': 'per year',
+        'capabilities.projects': 'Number of Projects',
+        'capabilities.implementations': 'Implementations',
+        'capabilities.industries': 'Industries',
         
         // Contact Section
         'contact.title': 'Contact',
@@ -571,10 +587,100 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Observe sections for animation
-    document.querySelectorAll('.about, .contact, .services').forEach(section => {
+    document.querySelectorAll('.about, .contact, .services, .capabilities').forEach(section => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(30px)';
         section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(section);
     });
+    
+    // Counter Animation for Capabilities Section
+    const counters = document.querySelectorAll('.capability-counter');
+    let countersAnimated = false;
+    
+    function animateCounters() {
+        if (countersAnimated) return;
+        
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const duration = 2000; // 2 seconds
+            const increment = target / (duration / 16); // 60fps
+            let current = 0;
+            
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    counter.textContent = Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+            
+            updateCounter();
+        });
+        
+        countersAnimated = true;
+    }
+    
+    // Observer for capabilities section to trigger counter animation
+    const capabilitiesSection = document.querySelector('.capabilities');
+    if (capabilitiesSection) {
+        const counterObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    startTypingAnimation();
+                }
+            });
+        }, { threshold: 0.3 });
+        
+        counterObserver.observe(capabilitiesSection);
+    }
+    
+    // Typing Animation for Industries
+    const industriesPL = ['FMCG', 'Automotive', 'Rolnictwo', 'Energia', 'Finance'];
+    const industriesEN = ['FMCG', 'Automotive', 'Agriculture', 'Energy', 'Finance'];
+    let industryIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingStarted = false;
+    const typingElement = document.getElementById('typing-industries');
+    
+    function getIndustries() {
+        return currentLang === 'pl' ? industriesPL : industriesEN;
+    }
+    
+    function startTypingAnimation() {
+        if (typingStarted || !typingElement) return;
+        typingStarted = true;
+        typeIndustry();
+    }
+    
+    function typeIndustry() {
+        const industries = getIndustries();
+        const currentIndustry = industries[industryIndex];
+        
+        if (isDeleting) {
+            charIndex--;
+            typingElement.textContent = currentIndustry.substring(0, charIndex);
+        } else {
+            charIndex++;
+            typingElement.textContent = currentIndustry.substring(0, charIndex);
+        }
+        
+        let typeSpeed = isDeleting ? 50 : 100;
+        
+        if (!isDeleting && charIndex === currentIndustry.length) {
+            // Pause at end of word
+            typeSpeed = 2000;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            industryIndex = (industryIndex + 1) % industries.length;
+            typeSpeed = 500;
+        }
+        
+        setTimeout(typeIndustry, typeSpeed);
+    }
 });
