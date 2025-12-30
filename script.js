@@ -367,7 +367,7 @@ function updateLanguage(lang) {
     document.documentElement.lang = lang;
     
     // Update page title
-    document.title = lang === 'pl' ? 'MMM Consulting - Zrównoważony Biznes' : 'MMM Consulting - Sustainable Business';
+    document.title = lang === 'pl' ? 'MMM Consulting' : 'MMM Consulting';
     
     // Update all elements with data-i18n attribute
     document.querySelectorAll('[data-i18n]').forEach(element => {
