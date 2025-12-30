@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMM Consulting - Zrównoważony Biznes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#top" class="logo">
+                <img src="imgs/logommm.png" alt="MMM Consulting Logo">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#services" class="nav-link" data-i18n="nav.services">Nasze Usługi</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">O nas</a></li>
+                <li><a href="#team" class="nav-link" data-i18n="nav.team">Zespół</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontakt</a></li>
+            </ul>
+            <div class="lang-toggle">
+                <button class="lang-btn active" data-lang="pl">PL</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+        <div class="hero-background">
+            <img src="imgs/landscape-1.jpg" alt="Wind turbines in green landscape" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">Rentowny i odporny zrównoważony biznes</h1>
+            <div class="hero-tagline" data-i18n="hero.tagline">Kompleksowe podejście do ESG i zrównoważonego rozwoju</div>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+                Jeśli chcesz wzmacniać przewagi konkurencyjne Twojej firmy, aby pozwalały na szybszy, 
+                bardziej zyskowny i zgodny z zasadami zrównoważonego rozwoju rozwój poprzez ESG, postaw na:
+            </p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">1</div>
+                    <div class="benefit-content">
+                        <p data-i18n="benefits.1">Wzmocnienie stabilności i rentowności dzięki lepszej kontroli kosztów energii, surowców i materiałów oraz skutecznemu zarządzaniu ryzykiem klimatycznym i regulacyjnym.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">2</div>
+                    <div class="benefit-content">
+                        <p data-i18n="benefits.2">Budowanie realnej przewagi w sprzedaży i przetargach u kluczowych klientów w oparciu o standardy zrównoważonego rozwoju.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">3</div>
+                    <div class="benefit-content">
+                        <p data-i18n="benefits.3">Otwarcie dostępu do dotacji, ulg i korzystniejszego finansowania inwestycji rozwojowych dzięki spełnianiu kryteriów środowiskowych.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">4</div>
+                    <div class="benefit-content">
+                        <p data-i18n="benefits.4">Wdrożenie przejrzystego, mierzalnego i audytowalnego planu dekarbonizacji oraz poprawę efektywności operacyjnej – zarówno wewnątrz firmy, jak i w całym łańcuchu dostaw.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">5</div>
+                    <div class="benefit-content">
+                        <p data-i18n="benefits.5">Zapewnienie pełnej zgodności z wymaganiami regulacyjnymi i raportowymi w zakresie adekwatnym do skali oraz profilu Twojej działalności.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">6</div>
+                    <div class="benefit-content">
+                        <p data-i18n="benefits.6">Rozwój przewag konkurencyjnych opartych o proste i wydajne procesy i pragmatyczny plan działania.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-description">
+                <p data-i18n="hero.desc1">Właśnie na tych filarach opieramy współpracę z naszymi klientami, wspierając ich w drodze do zrównoważonego i zyskownego rozwoju.</p>
+                <p data-i18n="hero.desc2">Pomagamy zarządom, właścicielom, CFO i CSO budować stabilny, rentowny i odporny na zmiany klimatyczne biznes. Projektujemy strategię zrównoważonego rozwoju, mierzalny ślad węglowy (w tym ślad produktów), ścieżki i plany dekarbonizacji, podejście do ryzyk klimatycznych oraz raport zrównoważonego rozwoju zgodny z regulacjami i dopasowany do profilu firmy.</p>
+                <p data-i18n="hero.desc3">Poniżej przedstawiamy zakres usług, które wspierają przejście od rozproszonych wymogów i oczekiwań rynku do spójnie zaplanowanej, biznesowo uzasadnionej transformacji Twojego biznesu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Nasze Usługi</h2>
+            <div class="services-carousel-wrapper">
+                <button class="carousel-arrow carousel-arrow-left" aria-label="Previous">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                
+                <div class="services-carousel">
+                    <div class="services-track">
+                        <!-- Service 1 -->
+                        <div class="service-card">
+                            <div class="service-number">1</div>
+                            <h3 class="service-title" data-i18n="service1.title">Analiza luk regulacyjnych ESG (CSRD, CSDDD, VSME itd.)</h3>
+                            <p class="service-description" data-i18n="service1.desc">Analizujemy otoczenie regulacyjne Twojej firmy i zamieniamy gąszcz przepisów w czytelną mapę obowiązków, ryzyk i priorytetów działań. Celem jest jasność – co jest konieczne, co opłacalne, a co zbędne.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service1.li1">określamy, które regulacje zrównoważonego rozwoju (CSRD/ESRS, CSDDD, VSME, Taksonomia UE, regulacje dot. greenwashingu) faktycznie dotyczą Twojej firmy – teraz i w perspektywie kilku lat,</li>
+                                    <li data-i18n="service1.li2">diagnozujemy obecny poziom przygotowania organizacji: dane, procesy, polityki, raportowanie, governance,</li>
+                                    <li data-i18n="service1.li3">identyfikujemy kluczowe luki oraz obszary podwyższonego ryzyka,</li>
+                                    <li data-i18n="service1.li4">przygotowujemy syntetyczny raport „gdzie jesteśmy vs. gdzie powinniśmy być",</li>
+                                    <li data-i18n="service1.li5">układamy priorytetowy plan działań na 6–24 miesiące.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 2 -->
+                        <div class="service-card">
+                            <div class="service-number">2</div>
+                            <h3 class="service-title" data-i18n="service2.title">Analiza podwójnej istotności (Double Materiality Assessment)</h3>
+                            <p class="service-description" data-i18n="service2.desc">Porządkujemy tematy zrównoważonego rozwoju pod kątem ich znaczenia dla Twojej firmy i otoczenia, tak aby skupić zasoby tam, gdzie efekt biznesowy i regulacyjny jest największy.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service2.li1">projektujemy podejście do analizy podwójnej istotności zgodne z ESRS/VSME,</li>
+                                    <li data-i18n="service2.li2">prowadzimy warsztaty z kluczowymi osobami (zarząd, finanse, operacje, HR, zakupy, sprzedaż),</li>
+                                    <li data-i18n="service2.li3">zbieramy i analizujemy dane z ankiet i wywiadów wewnętrznych oraz – gdy to potrzebne – zewnętrznych,</li>
+                                    <li data-i18n="service2.li4">oceniamy wpływ poszczególnych tematów zrównoważonego rozwoju na firmę oraz wpływ firmy na otoczenie,</li>
+                                    <li data-i18n="service2.li5">opracowujemy matrycę podwójnej istotności oraz rekomendujemy priorytety zrównoważonego rozwoju.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 3 -->
+                        <div class="service-card">
+                            <div class="service-number">3</div>
+                            <h3 class="service-title" data-i18n="service3.title">Strategia zrównoważonego rozwoju zintegrowana ze strategią biznesową</h3>
+                            <p class="service-description" data-i18n="service3.desc">Integrujemy strategię zrównoważonego rozwoju ze strategią biznesową tak, aby wspierało wzrost, rentowność, efektywność operacyjną i zarządzanie ryzykiem – zamiast funkcjonować obok bieżącego biznesu.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service3.li1">przekładamy wyniki analiz (luki regulacyjne, istotność tematów) na główne priorytety strategiczne zrównoważonego rozwoju,</li>
+                                    <li data-i18n="service3.li2">definiujemy cele, KPI oraz strukturę zarządzania (role, odpowiedzialności, fora decyzyjne),</li>
+                                    <li data-i18n="service3.li3">projektujemy inicjatywy ukierunkowane na optymalizację procesów oraz wykorzystania energii, surowców i zasobów naturalnych,</li>
+                                    <li data-i18n="service3.li4">integrujemy cele i działania zrównoważonego rozwoju ze strategią wzrostu, rentowności i zarządzania ryzykiem – w tym klimatycznym,</li>
+                                    <li data-i18n="service3.li5">przygotowujemy dokument strategii zrównoważonego rozwoju do wykorzystania wewnętrznego i zewnętrznego.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 4 -->
+                        <div class="service-card">
+                            <div class="service-number">4</div>
+                            <h3 class="service-title" data-i18n="service4.title">Ślad węglowy i ślad produktu (LCA / Product Carbon Footprint)</h3>
+                            <p class="service-description" data-i18n="service4.desc">Dostarczamy wiarygodny, policzalny obraz emisji – zarówno na poziomie organizacji, jak i kluczowych produktów. To fundament dekarbonizacji, raportowania i rozmów z klientami oraz bankami.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service4.li1">projektujemy podejście do liczenia śladu węglowego (zakres 1/2/3),</li>
+                                    <li data-i18n="service4.li2">zbieramy i weryfikujemy dane niezbędne do obliczeń,</li>
+                                    <li data-i18n="service4.li3">obliczamy ślad węglowy organizacji oraz – tam, gdzie to zasadne – ślad węglowy produktów (LCA/PCF),</li>
+                                    <li data-i18n="service4.li4">identyfikujemy główne źródła emisji i obszary o największym potencjale redukcji,</li>
+                                    <li data-i18n="service4.li5">przygotowujemy wyniki w formie zrozumiałej dla zarządu, klientów, banków i audytorów.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 5 -->
+                        <div class="service-card">
+                            <div class="service-number">5</div>
+                            <h3 class="service-title" data-i18n="service5.title">Ścieżki i plan dekarbonizacji</h3>
+                            <p class="service-description" data-i18n="service5.desc">Zamieniamy dane o emisjach na uzgodnioną, policzalną i biznesowo uzasadnioną ścieżkę redukcji, która łączy perspektywy zarządu, finansów i operacji.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service5.li1">opracowujemy scenariusze dekarbonizacji w uzgodnionych horyzontach (np. 2030/2040/2050),</li>
+                                    <li data-i18n="service5.li2">analizujemy wpływ scenariuszy na emisje, CAPEX/OPEX oraz kluczowe obszary działalności,</li>
+                                    <li data-i18n="service5.li3">moderujemy proces wyboru scenenariusza docelowego z udziałem kluczowych decydentów,</li>
+                                    <li data-i18n="service5.li4">przygotowujemy szczegółowy plan dekarbonizacji: projekty, harmonogram, odpowiedzialności, KPI,</li>
+                                    <li data-i18n="service5.li5">proponujemy sposób monitorowania postępów i raportowania.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 6 -->
+                        <div class="service-card">
+                            <div class="service-number">6</div>
+                            <h3 class="service-title" data-i18n="service6.title">Program dekarbonizacji dostawców (zakres 3 / Scope 3)</h3>
+                            <p class="service-description" data-i18n="service6.desc">Porządkujemy i rozwijamy podejście do emisji w łańcuchu dostaw – tam, gdzie coraz częściej koncentrują się wymagania klientów, grup kapitałowych i regulatorów.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service6.li1">segmentujemy dostawców według wpływu na emisje, skali współpracy i znaczenia biznesowego,</li>
+                                    <li data-i18n="service6.li2">przygotowujemy narzędzia współpracy z dostawcami (ankiety, kryteria, kodeks dostawcy, zapisy umowne),</li>
+                                    <li data-i18n="service6.li3">analizujemy dane od dostawców i identyfikujemy obszary o największym potencjale redukcji,</li>
+                                    <li data-i18n="service6.li4">współtworzymy z kluczowymi dostawcami plany redukcji emisji,</li>
+                                    <li data-i18n="service6.li5">projektujemy proces monitorowania postępów i cyklicznych przeglądów.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 7 -->
+                        <div class="service-card">
+                            <div class="service-number">7</div>
+                            <h3 class="service-title" data-i18n="service7.title">Taksonomia UE – kwalifikacja działalności i wskaźniki</h3>
+                            <p class="service-description" data-i18n="service7.desc">Dostarczamy jasny obraz, jaka część Twojej działalności jest „zielona" w rozumieniu Taksonomii UE – co ma rosnące znaczenie w rozmowach z bankami, inwestorami i grupą kapitałową.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service7.li1">mapujemy działalności firmy na kategorie Taksonomii UE,</li>
+                                    <li data-i18n="service7.li2">analizujemy spełnienie kryteriów „eligible" i „aligned" dla poszczególnych obszarów,</li>
+                                    <li data-i18n="service7.li3">wyliczamy wskaźniki udziału przychodów, CAPEX i OPEX związanych z działalnościami objętymi Taksonomią,</li>
+                                    <li data-i18n="service7.li4">przygotowujemy materiały prezentujące wyniki dla zarządu, banków, inwestorów i grupy kapitałowej,</li>
+                                    <li data-i18n="service7.li5">wskazujemy kierunki zwiększania udziału działalności zgodnej z Taksonomią w kolejnych latach.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 8 -->
+                        <div class="service-card">
+                            <div class="service-number">8</div>
+                            <h3 class="service-title" data-i18n="service8.title">Dotacje i finansowanie zielonych inwestycji</h3>
+                            <p class="service-description" data-i18n="service8.desc">Łączymy projekty środowiskowe i klimatyczne Twojej firmy z konkretnymi możliwościami finansowania – dotacjami oraz zielonymi i sustainability-linked produktami bankowymi.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service8.li1">analizujemy portfel planowanych inwestycji (OZE, efektywność energetyczna, modernizacje, nowe technologie),</li>
+                                    <li data-i18n="service8.li2">dobieramy adekwatne programy krajowe, unijne oraz rozwiązania bankowe,</li>
+                                    <li data-i18n="service8.li3">przygotowujemy merytoryczną część zrównoważonego rozwoju/klimat oraz wskaźniki (w tym związane z Taksonomią UE),</li>
+                                    <li data-i18n="service8.li4">wspieramy przy tworzeniu dokumentacji aplikacyjnej i odpowiedziach na pytania instytucji finansujących,</li>
+                                    <li data-i18n="service8.li5">pomagamy powiązać projekty inwestycyjne z przyjętą strategią zrównoważonego rozwoju i planem dekarbonizacji.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 9 -->
+                        <div class="service-card">
+                            <div class="service-number">9</div>
+                            <h3 class="service-title" data-i18n="service9.title">Raport zrównoważonego rozwoju dostosowany do regulacji i potrzeb biznesu</h3>
+                            <p class="service-description" data-i18n="service9.desc">Projektujemy raport tak, aby jednocześnie spełniał wymogi regulacyjne i realnie wspierał zarządzanie oraz komunikację z rynkiem – wewnątrz i na zewnątrz organizacji.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service9.li1">dobieramy odpowiedni format raportu (CSRD/ESRS lub ESG/VSME, w zależności od profilu firmy),</li>
+                                    <li data-i18n="service9.li2">projektujemy strukturę raportu oraz zestaw wskaźników,</li>
+                                    <li data-i18n="service9.li3">organizujemy proces zbierania i weryfikacji danych z różnych części organizacji,</li>
+                                    <li data-i18n="service9.li4">przygotowujemy propozycje treści (część opisowa i analityczna) we współpracy z Twoim zespołem,</li>
+                                    <li data-i18n="service9.li5">doradzamy, jak raport wykorzystywać w relacjach z zarządem, bankami, inwestorami, klientami i pracownikami.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 10 -->
+                        <div class="service-card">
+                            <div class="service-number">10</div>
+                            <h3 class="service-title" data-i18n="service10.title">Odpowiedzialne offsetowanie emisji</h3>
+                            <p class="service-description" data-i18n="service10.desc">Porządkujemy podejście do kompensacji emisji tak, aby uzupełniało działania redukcyjne i wzmacniało wiarygodność klimatyczną firmy, a nie generowało ryzyka greenwashingu.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service10.li1">określamy rolę offsetu w strategii klimatycznej Twojej firmy (zakres, kolejność względem działań redukcyjnych, horyzont czasowy),</li>
+                                    <li data-i18n="service10.li2">definiujemy kryteria wyboru projektów offsetowych (standardy, dodatkowość, trwałość, ryzyko),</li>
+                                    <li data-i18n="service10.li3">rekomendujemy portfel projektów offsetowych oraz sposób ich dokumentowania,</li>
+                                    <li data-i18n="service10.li4">przygotowujemy zasady raportowania i komunikacji dotyczącej kompensacji emisji,</li>
+                                    <li data-i18n="service10.li5">łączymy podejście do offsetu z szerszą strategią zrównoważonego rozwoju i dekarbonizacji.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 11 -->
+                        <div class="service-card">
+                            <div class="service-number">11</div>
+                            <h3 class="service-title" data-i18n="service11.title">Partner w zrównoważonym rozwoju – stałe wsparcie w ESG (abonament)</h3>
+                            <p class="service-description" data-i18n="service11.desc">Zapewniamy stałe, elastyczne wsparcie w obszarze ESG dla firm, które chcą mieć temat pod kontrolą bez budowania rozbudowanych struktur wewnętrznych.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service11.li1">przygotowujemy cykliczne (np. kwartalne) podsumowania kluczowych zmian regulacyjnych i rynkowych w ESG wraz z rekomendacjami działań,</li>
+                                    <li data-i18n="service11.li2">utrzymujemy z Tobą pod kontrolą podstawowy zestaw wskaźników zrównoważonego rozwoju,</li>
+                                    <li data-i18n="service11.li3">udostępniamy pulę godzin konsultacyjnych na bieżące potrzeby (ankiety klientów, pytania banków, materiały dla zarządu i komitetów),</li>
+                                    <li data-i18n="service11.li4">uczestniczymy w wybranych spotkaniach wewnętrznych jako zewnętrzny partner ESG,</li>
+                                    <li data-i18n="service11.li5">dostosowujemy zakres współpracy do wielkości, branży i dojrzałości Twojej organizacji w obszarze zrównoważonego rozwoju.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                        
+                        <!-- Service 12 -->
+                        <div class="service-card">
+                            <div class="service-number">12</div>
+                            <h3 class="service-title" data-i18n="service12.title">Pomoc w rozwoju Twojej firmy</h3>
+                            <p class="service-description" data-i18n="service12.desc">Przygotowujemy plan rozwoju lub audytujemy istniejący. Określamy które działania są dla firmy najważniejsze i w jaki sposób są wewnętrznie powiązane i zależne.</p>
+                            <div class="service-expanded">
+                                <p><strong data-i18n="services.scope">W ramach usługi:</strong></p>
+                                <ul>
+                                    <li data-i18n="service12.li1">sprawdzamy i ulepszamy działania prowadzące do osiągnięcia celów i proponujemy ograniczanie / eliminację działań bezwartościowych,</li>
+                                    <li data-i18n="service12.li2">usprawniamy obszary Sprzedaży, Marketingu, B+R, Łańcucha Dostaw, Produkcji, Kapitału Ludzkiego, Finansów i Controllingu,</li>
+                                    <li data-i18n="service12.li3">pomagamy rozwinąć / wdrożyć zarządzanie ryzykiem i audyt wewnętrzny,</li>
+                                    <li data-i18n="service12.li4">dbamy o rozwój komunikacji i kultury organizacyjnej,</li>
+                                    <li data-i18n="service12.li5">tworzymy plan działań prowadzących do efektywnej sprzedaży firmy lub wypracowujemy etapowy plan sukcesji.</li>
+                                </ul>
+                            </div>
+                            <button class="service-expand-btn" data-i18n="services.more">Więcej</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-arrow carousel-arrow-right" aria-label="Next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">O nas</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="imgs/nature-360-portrait-1.jpg" alt="Aerial view of sustainability landscape" class="placeholder-image">
+                </div>
+                <div class="about-text">
+                    <p data-i18n="about.p1">Jesteśmy jednocześnie praktykami biznesu i konsultantami z wieloletnim doświadczeniem.
+                    Łączymy realne doświadczenia w prowadzeniu i zarządzaniu firmami w Polsce i za granicą z
+                    perspektywą doradczą, co pozwala nam projektować rozwiązania, które da się wdrożyć w
+                    praktyce, a nie tylko opisać w prezentacji.</p>
+                    <p data-i18n="about.p2">Na co dzień współpracujemy z regulatorami na poziomie Unii Europejskiej (w tym instytucjami
+                    odpowiedzialnymi za regulacje i standardy raportowania niefinansowego), organizacjami
+                    sektorowymi, europejskimi bankami oraz firmami doradczymi. Dzięki temu rozumiemy, jak
+                    wymagania regulacyjne ESG przekładają się na oczekiwania rynku i kryteria finansowania
+                    przedsiębiorstw.</p>
+                    <p data-i18n="about.p3">Naszą ofertę opieramy na doświadczeniu w zarządzaniu firmami produkcyjnymi, handlowymi i
+                    usługowymi. Mówimy prostym i konkretnym językiem – bez korporacyjnej nowomowy –
+                    koncentrując się na praktycznym zrozumieniu wyzwań transformacji ESG, szukaniu rozwiązań
+                    oraz ich skutecznym wdrażaniu.</p>
+                    <p data-i18n="about.p4">Wierzymy, że rację ma nie ten, kto miał ją na początku drogi, lecz ten, kto potrafił przełożyć ją na
+                    konkretne działania i wyniki. Efektywność wdrożonych działań mierzymy przede wszystkim
+                    rezultatem finansowym i większą odpornością biznesu, a nie liczbą slajdów i raportów.</p>
+                    <p data-i18n="about.p5">Pomagamy łączyć tematykę ESG ze strategią i długoterminowymi celami przedsiębiorstwa, które
+                    szuka najlepszych dróg rozwoju w dynamicznie zmieniającym się otoczeniu regulacyjnym i
+                    rynkowym. Nasze doświadczenie pokazuje, że firmy, które zintegrowały ESG ze strategicznym i
+                    operacyjnym zarządzaniem biznesem, budują trwałą przewagę konkurencyjną.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title" data-i18n="team.title">Nasz Zespół</h2>
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="imgs/pfp_czarnecki.png" alt="Marcin Czarnecki">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Marcin Czarnecki</h3>
+                        <p class="team-bio" data-i18n="team.czarnecki.bio">Ekspert w dziedzinie zarządzania i rozwoju firm FMCG Food w Polsce i Europie: wieloletni Prezes Zarządu, Dyrektor Generalny i Członek Rad Nadzorczych firm Raisio Polska, Danone, Bongrain (Grupa Savencia), Rigas Piensaimnieks (Ryga, Łotwa), Grupa Delicpol, Bakalland SA, Bielenda SA, Sonko / Oshee Group, współzałożyciel PROTEINrise start-upu z branży foodtech oraz MMM Consulting łączącą strategie firm z tematyką ESG.</p>
+                        <p class="team-bio" data-i18n="team.czarnecki.bio2">Mentor w programach Mentors4Starters oraz Challenge Lab, członek Rady Ekspertów kierunku Prawo w Biznesie, KUL. Obszary specjalizacji to sprzedaż i marketing, innowacyjność, zarządzanie procesami i zmianą.</p>
+                        <p class="team-bio" data-i18n="team.czarnecki.bio3">Współtwórca sukcesu marek produktów FMCG w Polsce i Europie: Galbani (Wschodnia i Centralna Europa); Sekret Mnicha, Tartare, Turek (Polska); Zhivinka (Rosja i Ukraina), Zvenigora (Ukraina), Delisana (Polska i Europa), Łomża (Polska), Cleanic (Polska i Europa), Sonko (Polska).</p>
+                        <p class="team-bio" data-i18n="team.czarnecki.bio4">Absolwent Uniwersytetu Warszawskiego, European University (MBA) w Barcelonie, studiów podyplomowych w London Business School, INSEAD, Wharton Business School, oraz studiów doktoranckich na wydziale Zarządzania i Finansów Szkoły Głównej Handlowej (SGH).</p>
+                        <p class="team-bio" data-i18n="team.czarnecki.bio5">Prywatnie pasjonat tenisa, golfa i narciarstwa alpejskiego.</p>
+
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <div class="team-photo">
+                        <img src="imgs/pfp_wielkopolan.jpg" alt="Maciej Wielkopolan">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Maciej Wielkopolan</h3>
+                        <p class="team-bio" data-i18n="team.wielkopolan.bio">Praktyk w prowadzeniu biznesu z 30 letnim doświadczeniem. Dyrektor Generalny / CEO firm z branży szeroko pojętego marketingu w polskich i międzynarodowych przedsięwzięciach.</p>
+                        <p class="team-bio" data-i18n="team.wielkopolan.bio2">Ekspert w zarządzaniu z wielokulturowym doświadczeniem obejmującym zarządzanie firmami i operacjami, a także sprzedażą i marketingiem. Silny lider z dużymi umiejętnościami w planowaniu strategicznym, z doświadczeniem w skutecznym wdrażaniu planów działania i osiąganiu doskonałych wyników. Konsultant i Interim Manager.</p>
+                        <p class="team-bio" data-i18n="team.wielkopolan.bio3">Doradzał wielu firmom od fazy ich powstania do pełnego rozwoju. Założył kilkanaście spółek i z sukcesem rozwijał je w następnych latach. Zrealizował kilkaset projektów, międzynarodowych i lokalnych. Wprowadzał na rynek polski płatną telewizję Canal+, gdzie pełnił funkcję Dyrektora Zarządzającego jednej ze spółek grupy Canal+ Polska. Wieloletni Prezes Polskiego Stowarzyszenia Marketingu SMB.</p>
+                        <p class="team-bio" data-i18n="team.wielkopolan.bio4">Absolwent Ecole Superieure de Commerce et de Management (ESA3) w Paryżu (Francja). Absolwent wydziału Elektroniki Politechniki Wrocławskiej. Stypendysta rządu francuskiego w Ecole Nationale Superieure des Telecommunications w Paryżu i doktorant Ecole Pratique des Hautes Etudes w Paryżu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.email">Email</h3>
+                            <p>kontakt@mmmconsulting.pl</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.phone">Telefon</h3>
+                            <p>+48 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.address">Adres</h3>
+                            <p data-i18n="contact.addressValue">Warszawa, Polska</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2025 MMM Consulting. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
