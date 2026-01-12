@@ -13,6 +13,12 @@ const translations = {
         'hero.subtitle': 'Jeśli chcesz wzmacniać przewagi konkurencyjne Twojej firmy, aby pozwalały na szybszy, bardziej zyskowny i zgodny z zasadami zrównoważonego rozwoju rozwój poprzez ESG, postaw na:',
         
         // Benefits
+        'benefits.title1': 'Stabilność',
+        'benefits.title2': 'Sprzedaż',
+        'benefits.title3': 'Finansowanie',
+        'benefits.title4': 'Dekarbonizacja',
+        'benefits.title5': 'Zgodność',
+        'benefits.title6': 'Efektywność',
         'benefits.1': 'Wzmocnienie stabilności i rentowności dzięki lepszej kontroli kosztów energii, surowców i materiałów oraz skutecznemu zarządzaniu ryzykiem klimatycznym i regulacyjnym.',
         'benefits.2': 'Budowanie realnej przewagi w sprzedaży i przetargach u kluczowych klientów w oparciu o standardy zrównoważonego rozwoju.',
         'benefits.3': 'Otwarcie dostępu do dotacji, ulg i korzystniejszego finansowania inwestycji rozwojowych dzięki spełnianiu kryteriów środowiskowych.',
@@ -189,6 +195,12 @@ const translations = {
         'hero.subtitle': 'If you want to strengthen your company\'s competitive advantages to enable faster, more profitable growth aligned with sustainable development principles through ESG, focus on:',
         
         // Benefits
+        'benefits.title1': 'Stability',
+        'benefits.title2': 'Sales',
+        'benefits.title3': 'Financing',
+        'benefits.title4': 'Decarbonization',
+        'benefits.title5': 'Compliance',
+        'benefits.title6': 'Efficiency',
         'benefits.1': 'Strengthening stability and profitability through better control of energy, raw materials, and material costs, as well as effective climate and regulatory risk management.',
         'benefits.2': 'Building real competitive advantage in sales and tenders with key clients based on sustainable development standards.',
         'benefits.3': 'Unlocking access to grants, tax reliefs, and more favorable financing for development investments by meeting environmental criteria.',

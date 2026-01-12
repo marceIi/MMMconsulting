@@ -310,7 +310,20 @@ body {
     font-weight: 700;
     font-size: 1.25rem;
     border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.benefit-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 16px;
+}
+
+.benefit-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #fff;
 }
 
 .benefit-content p {
