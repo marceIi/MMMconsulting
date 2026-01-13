@@ -166,7 +166,7 @@ const translations = {
         'contact.email': 'Email',
         'contact.phone': 'Telefon',
         'contact.address': 'Adres',
-        'contact.addressValue': 'Warszawa, Polska',
+        'contact.addressValue': 'Grzybowska 87, 00-844 Warszawa',
         
         // Footer
         'footer.copyright': '© 2025 MMM Consulting. Wszystkie prawa zastrzeżone.',
@@ -348,7 +348,7 @@ const translations = {
         'contact.email': 'Email',
         'contact.phone': 'Phone',
         'contact.address': 'Address',
-        'contact.addressValue': 'Warsaw, Poland',
+        'contact.addressValue': 'Grzybowska 87, 00-844 Warsaw',
         
         // Footer
         'footer.copyright': '© 2025 MMM Consulting. All rights reserved.',
