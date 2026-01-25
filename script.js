@@ -8,23 +8,16 @@ const translations = {
         'nav.contact': 'Kontakt',
         
         // Hero Section
-        'hero.title': 'Rentowny i odporny zrównoważony biznes',
-        'hero.tagline': 'Kompleksowe podejście do ESG i zrównoważonego rozwoju',
-        'hero.subtitle': 'Jeśli chcesz wzmacniać przewagi konkurencyjne Twojej firmy, aby pozwalały na szybszy, bardziej zyskowny i zgodny z zasadami zrównoważonego rozwoju rozwój poprzez ESG, postaw na:',
+        'hero.title': 'Rentowny, odporny i zrównoważony biznes',
+        'hero.tagline': 'Kompleksowe podejście do zrównoważonego rozwoju',
+        'hero.subtitle': 'Jeśli chcesz wzmacniać przewagi konkurencyjne Twojej firmy, aby pozwalały na szybszy, bardziej zyskowny i zgodny z zasadami zrównoważonej transformacji rozwój, postaw na:',
         
-        // Benefits
-        'benefits.title1': 'Stabilność i Rentowność Biznesu',
-        'benefits.title2': 'Sprzedaż Produktów i Usług',
-        'benefits.title3': 'Finansowanie Rozwoju',
-        'benefits.title4': 'Dekarbonizacja',
-        'benefits.title5': 'Zgodność z Regulacjami',
-        'benefits.title6': 'Przewagi Konkurencyjne',
-        'benefits.1': 'Wzmocnienie stabilności i rentowności dzięki lepszej kontroli kosztów energii, surowców i materiałów oraz skutecznemu zarządzaniu ryzykiem klimatycznym i regulacyjnym.',
-        'benefits.2': 'Budowanie realnej przewagi w sprzedaży i przetargach u kluczowych klientów w oparciu o standardy zrównoważonego rozwoju.',
-        'benefits.3': 'Otwarcie dostępu do dotacji, ulg i korzystniejszego finansowania inwestycji rozwojowych dzięki spełnianiu kryteriów środowiskowych.',
-        'benefits.4': 'Wdrożenie przejrzystego, mierzalnego i audytowalnego planu dekarbonizacji oraz poprawę efektywności operacyjnej – zarówno wewnątrz firmy, jak i w całym łańcuchu dostaw.',
-        'benefits.5': 'Zapewnienie pełnej zgodności z wymaganiami regulacyjnymi i raportowymi w zakresie adekwatnym do skali oraz profilu Twojej działalności.',
-        'benefits.6': 'Rozwój przewag konkurencyjnych opartych o proste i wydajne procesy i pragmatyczny plan działania.',
+        // Benefits (bullet points)
+        'benefits.1': 'wzmocnienie stabilności i rentowności dzięki lepszej kontroli kosztów energii, surowców i materiałów oraz skutecznemu zarządzaniu ryzykiem klimatycznym i regulacyjnym;',
+        'benefits.2': 'budowanie realnej przewagi w sprzedaży i przetargach u kluczowych klientów w oparciu o standardy zrównoważonego rozwoju;',
+        'benefits.3': 'otwarcie dostępu do dotacji, ulg i korzystniejszego finansowania inwestycji rozwojowych dzięki spełnianiu kryteriów środowiskowych;',
+        'benefits.4': 'wdrożenie przejrzystego, mierzalnego i audytowalnego planu dekarbonizacji oraz poprawę efektywności operacyjnej – zarówno wewnątrz firmy, jak i w całym łańcuchu dostaw;',
+        'benefits.5': 'zapewnienie pełnej zgodności z wymaganiami regulacyjnymi i raportowymi w zakresie adekwatnym do skali oraz profilu Twojej działalności.',
         
         // Hero Description
         'hero.desc1': 'Właśnie na tych filarach opieramy współpracę z naszymi klientami, wspierając ich w drodze do zrównoważonego i zyskownego rozwoju.',
@@ -36,6 +29,20 @@ const translations = {
         'services.scope': 'W ramach usługi:',
         'services.more': 'Więcej',
         'services.less': 'Mniej',
+        
+        // Service short names for compact grid
+        'service1.short': 'Analiza luk regulacyjnych ESG',
+        'service2.short': 'Analiza podwójnej istotności',
+        'service3.short': 'Strategia zrównoważonego rozwoju',
+        'service4.short': 'Ślad węglowy i ślad produktu',
+        'service5.short': 'Ścieżki i plan dekarbonizacji',
+        'service6.short': 'Dekarbonizacja dostawców',
+        'service7.short': 'Taksonomia UE',
+        'service8.short': 'Dotacje i finansowanie',
+        'service9.short': 'Raport zrównoważonego rozwoju',
+        'service10.short': 'Offsetowanie emisji',
+        'service11.short': 'Partner ESG (abonament)',
+        'service12.short': 'Rozwój firmy',
         
         // Service 1
         'service1.title': 'Analiza luk regulacyjnych ESG (CSRD, CSDDD, VSME itd.)',
@@ -83,7 +90,7 @@ const translations = {
         'service5.li5': 'proponujemy sposób monitorowania postępów i raportowania.',
         
         // Service 6
-        'service6.title': 'Program dekarbonizacji dostawców (zakres 3 / Scope 3)',
+        'service6.title': 'Program dekarbonizacji dostawców ',
         'service6.desc': 'Porządkujemy i rozwijamy podejście do emisji w łańcuchu dostaw – tam, gdzie coraz częściej koncentrują się wymagania klientów, grup kapitałowych i regulatorów.',
         'service6.li1': 'segmentujemy dostawców według wpływu na emisje, skali współpracy i znaczenia biznesowego,',
         'service6.li2': 'przygotowujemy narzędzia współpracy z dostawcami (ankiety, kryteria, kodeks dostawcy, zapisy umowne),',
@@ -157,8 +164,8 @@ const translations = {
         'capabilities.title': 'Nasze Kompetencje',
         'capabilities.revenue': 'Przychody Klientów',
         'capabilities.revenue.sub': 'na rok',
-        'capabilities.projects': 'Ilość Projektów',
-        'capabilities.implementations': 'Wdrożenia',
+        'capabilities.projects': 'Projektów ESG',
+        'capabilities.implementations': 'Wdrożeń',
         'capabilities.industries': 'Branże',
         
         // Contact Section
@@ -177,6 +184,7 @@ const translations = {
         'team.czarnecki.bio2': 'Mentor w programach Mentors4Starters oraz Challenge Lab, członek Rady Ekspertów kierunku Prawo w Biznesie, KUL. Obszary specjalizacji to sprzedaż i marketing, innowacyjność, zarządzanie procesami i zmianą.',
         'team.czarnecki.bio3': 'Współtwórca sukcesu marek produktów FMCG w Polsce i Europie: Galbani (Wschodnia i Centralna Europa); Sekret Mnicha, Tartare, Turek (Polska); Zhivinka (Rosja i Ukraina), Zvenigora (Ukraina), Delisana (Polska i Europa), Łomża (Polska), Cleanic (Polska i Europa), Sonko (Polska).',
         'team.czarnecki.bio4': 'Absolwent Uniwersytetu Warszawskiego, European University (MBA) w Barcelonie, studiów podyplomowych w London Business School, INSEAD, Wharton Business School, oraz studiów doktoranckich na wydziale Zarządzania i Finansów Szkoły Głównej Handlowej (SGH).',
+        'team.czarnecki.bio5': 'Prywatnie pasjonat tenisa, golfa i narciarstwa alpejskiego.',
         'team.wielkopolan.bio': 'Praktyk w prowadzeniu biznesu z 30 letnim doświadczeniem. Dyrektor Generalny / CEO firm z branży szeroko pojętego marketingu w polskich i międzynarodowych przedsięwzięciach.',
         'team.wielkopolan.bio2': 'Ekspert w zarządzaniu z wielokulturowym doświadczeniem obejmującym zarządzanie firmami i operacjami, a także sprzedażą i marketingiem. Silny lider z dużymi umiejętnościami w planowaniu strategicznym, z doświadczeniem w skutecznym wdrażaniu planów działania i osiąganiu doskonałych wyników. Konsultant i Interim Manager.',
         'team.wielkopolan.bio3': 'Doradzał wielu firmom od fazy ich powstania do pełnego rozwoju. Założył kilkanaście spółek i z sukcesem rozwijał je w następnych latach. Zrealizował kilkaset projektów, międzynarodowych i lokalnych. Wprowadzał na rynek polski płatną telewizję Canal+, gdzie pełnił funkcję Dyrektora Zarządzającego jednej ze spółek grupy Canal+ Polska. Wieloletni Prezes Polskiego Stowarzyszenia Marketingu SMB.',
@@ -190,23 +198,16 @@ const translations = {
         'nav.contact': 'Contact',
         
         // Hero Section
-        'hero.title': 'Profitable and Resilient Sustainable Business',
-        'hero.tagline': 'A Comprehensive Approach to ESG and Sustainable Development',
-        'hero.subtitle': 'If you want to strengthen your company\'s competitive advantages to enable faster, more profitable growth aligned with sustainable development principles through ESG, focus on:',
+        'hero.title': 'Profitable, Resilient and Sustainable Business',
+        'hero.tagline': 'A Comprehensive Approach to Sustainable Development',
+        'hero.subtitle': 'If you want to strengthen your company\'s competitive advantages to enable faster, more profitable growth aligned with sustainable transformation principles, focus on:',
         
-        // Benefits
-        'benefits.title1': 'Business Stability and Profitability',
-        'benefits.title2': 'Sale of Products and Services',
-        'benefits.title3': 'Development Financing',
-        'benefits.title4': 'Decarbonization',
-        'benefits.title5': 'Regulation Compliance',
-        'benefits.title6': 'Competitive Advantages',
-        'benefits.1': 'Strengthening stability and profitability through better control of energy, raw materials, and material costs, as well as effective climate and regulatory risk management.',
-        'benefits.2': 'Building real competitive advantage in sales and tenders with key clients based on sustainable development standards.',
-        'benefits.3': 'Unlocking access to grants, tax reliefs, and more favorable financing for development investments by meeting environmental criteria.',
-        'benefits.4': 'Implementing a transparent, measurable, and auditable decarbonization plan and improving operational efficiency – both within the company and across the entire supply chain.',
-        'benefits.5': 'Ensuring full compliance with regulatory and reporting requirements appropriate to the scale and profile of your business.',
-        'benefits.6': 'Developing competitive advantages based on simple and efficient processes and a pragmatic action plan.',
+        // Benefits (bullet points)
+        'benefits.1': 'strengthening stability and profitability through better control of energy, raw materials, and material costs, as well as effective climate and regulatory risk management;',
+        'benefits.2': 'building real competitive advantage in sales and tenders with key clients based on sustainable development standards;',
+        'benefits.3': 'unlocking access to grants, tax reliefs, and more favorable financing for development investments by meeting environmental criteria;',
+        'benefits.4': 'implementing a transparent, measurable, and auditable decarbonization plan and improving operational efficiency – both within the company and across the entire supply chain;',
+        'benefits.5': 'ensuring full compliance with regulatory and reporting requirements appropriate to the scale and profile of your business.',
         
         // Hero Description
         'hero.desc1': 'These are the pillars on which we base our cooperation with clients, supporting them on their journey to sustainable and profitable growth.',
@@ -218,6 +219,20 @@ const translations = {
         'services.scope': 'Within this service:',
         'services.more': 'More',
         'services.less': 'Less',
+        
+        // Service short names for compact grid
+        'service1.short': 'ESG Regulatory Gap Analysis',
+        'service2.short': 'Double Materiality Assessment',
+        'service3.short': 'Sustainability Strategy',
+        'service4.short': 'Carbon Footprint & LCA',
+        'service5.short': 'Decarbonization Plan',
+        'service6.short': 'Supplier Decarbonization',
+        'service7.short': 'EU Taxonomy',
+        'service8.short': 'Grants & Financing',
+        'service9.short': 'Sustainability Report',
+        'service10.short': 'Emissions Offsetting',
+        'service11.short': 'ESG Partner (subscription)',
+        'service12.short': 'Company Growth',
         
         // Service 1
         'service1.title': 'ESG Regulatory Gap Analysis (CSRD, CSDDD, VSME, etc.)',
@@ -265,7 +280,7 @@ const translations = {
         'service5.li5': 'we propose methods for monitoring progress and reporting.',
         
         // Service 6
-        'service6.title': 'Supplier Decarbonization Program (Scope 3)',
+        'service6.title': 'Supplier Decarbonization Program ',
         'service6.desc': 'We organize and develop the approach to emissions in the supply chain – where customer, corporate group, and regulatory requirements are increasingly focused.',
         'service6.li1': 'we segment suppliers according to their emissions impact, scale of cooperation, and business significance,',
         'service6.li2': 'we prepare supplier engagement tools (surveys, criteria, supplier code, contractual provisions),',
@@ -339,7 +354,7 @@ const translations = {
         'capabilities.title': 'Our Capabilities',
         'capabilities.revenue': 'Client Revenue',
         'capabilities.revenue.sub': 'per year',
-        'capabilities.projects': 'Number of Projects',
+        'capabilities.projects': 'ESG Projects',
         'capabilities.implementations': 'Implementations',
         'capabilities.industries': 'Industries',
         
@@ -464,110 +479,115 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Services Carousel
+    // Services Carousel (legacy - kept for compatibility if carousel elements exist)
     const track = document.querySelector('.services-track');
     const cards = document.querySelectorAll('.service-card');
     const leftArrow = document.querySelector('.carousel-arrow-left');
     const rightArrow = document.querySelector('.carousel-arrow-right');
     const dotsContainer = document.querySelector('.carousel-dots');
     
-    let currentIndex = 0;
-    let cardsPerView = getCardsPerView();
-    let totalPages = Math.ceil(cards.length / cardsPerView);
-    
-    function getCardsPerView() {
-        if (window.innerWidth <= 768) return 1;
-        return 2;
-    }
-    
-    function createDots() {
-        dotsContainer.innerHTML = '';
-        for (let i = 0; i < totalPages; i++) {
-            const dot = document.createElement('button');
-            dot.classList.add('carousel-dot');
-            if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToPage(i));
-            dotsContainer.appendChild(dot);
+    // Only initialize carousel if elements exist
+    if (track && cards.length > 0 && leftArrow && rightArrow && dotsContainer) {
+        let currentIndex = 0;
+        let cardsPerView = getCardsPerView();
+        let totalPages = Math.ceil(cards.length / cardsPerView);
+        
+        function getCardsPerView() {
+            if (window.innerWidth <= 768) return 1;
+            return 2;
         }
-    }
-    
-    function updateDots() {
-        const dots = document.querySelectorAll('.carousel-dot');
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentIndex);
+        
+        function createDots() {
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement('button');
+                dot.classList.add('carousel-dot');
+                if (i === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToPage(i));
+                dotsContainer.appendChild(dot);
+            }
+        }
+        
+        function updateDots() {
+            const dots = document.querySelectorAll('.carousel-dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+        
+        function updateArrows() {
+            leftArrow.disabled = currentIndex === 0;
+            rightArrow.disabled = currentIndex >= totalPages - 1;
+        }
+        
+        function goToPage(index) {
+            currentIndex = index;
+            const cardWidth = cards[0].offsetWidth + 24; // card width + gap
+            const offset = currentIndex * cardsPerView * cardWidth;
+            track.style.transform = `translateX(-${offset}px)`;
+            updateDots();
+            updateArrows();
+        }
+        
+        function nextPage() {
+            if (currentIndex < totalPages - 1) {
+                goToPage(currentIndex + 1);
+            }
+        }
+        
+        function prevPage() {
+            if (currentIndex > 0) {
+                goToPage(currentIndex - 1);
+            }
+        }
+        
+        leftArrow.addEventListener('click', prevPage);
+        rightArrow.addEventListener('click', nextPage);
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            const newCardsPerView = getCardsPerView();
+            if (newCardsPerView !== cardsPerView) {
+                cardsPerView = newCardsPerView;
+                totalPages = Math.ceil(cards.length / cardsPerView);
+                currentIndex = Math.min(currentIndex, totalPages - 1);
+                createDots();
+                goToPage(currentIndex);
+            }
         });
-    }
-    
-    function updateArrows() {
-        leftArrow.disabled = currentIndex === 0;
-        rightArrow.disabled = currentIndex >= totalPages - 1;
-    }
-    
-    function goToPage(index) {
-        currentIndex = index;
-        const cardWidth = cards[0].offsetWidth + 24; // card width + gap
-        const offset = currentIndex * cardsPerView * cardWidth;
-        track.style.transform = `translateX(-${offset}px)`;
-        updateDots();
+        
+        // Initialize carousel
+        createDots();
         updateArrows();
     }
     
-    function nextPage() {
-        if (currentIndex < totalPages - 1) {
-            goToPage(currentIndex + 1);
-        }
-    }
-    
-    function prevPage() {
-        if (currentIndex > 0) {
-            goToPage(currentIndex - 1);
-        }
-    }
-    
-    leftArrow.addEventListener('click', prevPage);
-    rightArrow.addEventListener('click', nextPage);
-    
-    // Handle window resize
-    window.addEventListener('resize', function() {
-        const newCardsPerView = getCardsPerView();
-        if (newCardsPerView !== cardsPerView) {
-            cardsPerView = newCardsPerView;
-            totalPages = Math.ceil(cards.length / cardsPerView);
-            currentIndex = Math.min(currentIndex, totalPages - 1);
-            createDots();
-            goToPage(currentIndex);
-        }
-    });
-    
-    // Initialize carousel
-    createDots();
-    updateArrows();
-    
-    // Service card expand functionality
+    // Service card expand functionality (legacy)
     const expandBtns = document.querySelectorAll('.service-expand-btn');
-    expandBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const card = this.closest('.service-card');
-            const expanded = card.querySelector('.service-expanded');
-            const isActive = expanded.classList.contains('active');
-            
-            // Close all other expanded sections
-            document.querySelectorAll('.service-expanded.active').forEach(el => {
-                el.classList.remove('active');
+    if (expandBtns.length > 0) {
+        expandBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const card = this.closest('.service-card');
+                const expanded = card.querySelector('.service-expanded');
+                const isActive = expanded.classList.contains('active');
+                
+                // Close all other expanded sections
+                document.querySelectorAll('.service-expanded.active').forEach(el => {
+                    el.classList.remove('active');
+                });
+                document.querySelectorAll('.service-expand-btn.active').forEach(el => {
+                    el.classList.remove('active');
+                    el.textContent = translations[currentLang]['services.more'];
+                });
+                
+                // Toggle current
+                if (!isActive) {
+                    expanded.classList.add('active');
+                    this.classList.add('active');
+                    this.textContent = translations[currentLang]['services.less'];
+                }
             });
-            document.querySelectorAll('.service-expand-btn.active').forEach(el => {
-                el.classList.remove('active');
-                el.textContent = translations[currentLang]['services.more'];
-            });
-            
-            // Toggle current
-            if (!isActive) {
-                expanded.classList.add('active');
-                this.classList.add('active');
-                this.textContent = translations[currentLang]['services.less'];
-            }
         });
-    });
+    }
     
     // Language Toggle
     const langBtns = document.querySelectorAll('.lang-btn');
@@ -582,6 +602,123 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize language on page load
     updateLanguage(currentLang);
+    
+    // Compact Services Grid functionality
+    const serviceCardsCompact = document.querySelectorAll('.service-card-compact');
+    const serviceDetailPanel = document.getElementById('serviceDetailPanel');
+    const serviceDetailContent = document.getElementById('serviceDetailContent');
+    const serviceDetailClose = document.querySelector('.service-detail-close');
+    
+    // Service data for detail panel
+    const serviceData = {
+        1: {
+            title: 'service1.title',
+            desc: 'service1.desc',
+            items: ['service1.li1', 'service1.li2', 'service1.li3', 'service1.li4', 'service1.li5']
+        },
+        2: {
+            title: 'service2.title',
+            desc: 'service2.desc',
+            items: ['service2.li1', 'service2.li2', 'service2.li3', 'service2.li4', 'service2.li5']
+        },
+        3: {
+            title: 'service3.title',
+            desc: 'service3.desc',
+            items: ['service3.li1', 'service3.li2', 'service3.li3', 'service3.li4', 'service3.li5']
+        },
+        4: {
+            title: 'service4.title',
+            desc: 'service4.desc',
+            items: ['service4.li1', 'service4.li2', 'service4.li3', 'service4.li4', 'service4.li5']
+        },
+        5: {
+            title: 'service5.title',
+            desc: 'service5.desc',
+            items: ['service5.li1', 'service5.li2', 'service5.li3', 'service5.li4', 'service5.li5']
+        },
+        6: {
+            title: 'service6.title',
+            desc: 'service6.desc',
+            items: ['service6.li1', 'service6.li2', 'service6.li3', 'service6.li4', 'service6.li5']
+        },
+        7: {
+            title: 'service7.title',
+            desc: 'service7.desc',
+            items: ['service7.li1', 'service7.li2', 'service7.li3', 'service7.li4', 'service7.li5']
+        },
+        8: {
+            title: 'service8.title',
+            desc: 'service8.desc',
+            items: ['service8.li1', 'service8.li2', 'service8.li3', 'service8.li4', 'service8.li5']
+        },
+        9: {
+            title: 'service9.title',
+            desc: 'service9.desc',
+            items: ['service9.li1', 'service9.li2', 'service9.li3', 'service9.li4', 'service9.li5']
+        },
+        10: {
+            title: 'service10.title',
+            desc: 'service10.desc',
+            items: ['service10.li1', 'service10.li2', 'service10.li3', 'service10.li4', 'service10.li5']
+        },
+        11: {
+            title: 'service11.title',
+            desc: 'service11.desc',
+            items: ['service11.li1', 'service11.li2', 'service11.li3', 'service11.li4', 'service11.li5']
+        },
+        12: {
+            title: 'service12.title',
+            desc: 'service12.desc',
+            items: ['service12.li1', 'service12.li2', 'service12.li3', 'service12.li4', 'service12.li5']
+        }
+    };
+    
+    function openServiceDetail(serviceNum) {
+        const data = serviceData[serviceNum];
+        if (!data) return;
+        
+        const t = translations[currentLang];
+        let itemsHtml = data.items.map(key => `<li>${t[key] || key}</li>`).join('');
+        
+        serviceDetailContent.innerHTML = `
+            <h3>${t[data.title] || data.title}</h3>
+            <p>${t[data.desc] || data.desc}</p>
+            <p><strong>${t['services.scope']}</strong></p>
+            <ul>${itemsHtml}</ul>
+        `;
+        
+        // Remove active from all cards
+        serviceCardsCompact.forEach(card => card.classList.remove('active'));
+        
+        // Add active to clicked card
+        const clickedCard = document.querySelector(`.service-card-compact[data-service="${serviceNum}"]`);
+        if (clickedCard) clickedCard.classList.add('active');
+        
+        serviceDetailPanel.classList.add('active');
+        
+        // Scroll to panel
+        setTimeout(() => {
+            serviceDetailPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+    }
+    
+    function closeServiceDetail() {
+        serviceDetailPanel.classList.remove('active');
+        serviceCardsCompact.forEach(card => card.classList.remove('active'));
+    }
+    
+    if (serviceCardsCompact.length > 0) {
+        serviceCardsCompact.forEach(card => {
+            card.addEventListener('click', function() {
+                const serviceNum = parseInt(this.getAttribute('data-service'));
+                openServiceDetail(serviceNum);
+            });
+        });
+    }
+    
+    if (serviceDetailClose) {
+        serviceDetailClose.addEventListener('click', closeServiceDetail);
+    }
     
     // Intersection Observer for scroll animations
     const observerOptions = {
@@ -651,8 +788,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Typing Animation for Industries
-    const industriesPL = ['FMCG', 'Automotive', 'Rolnictwo', 'Energia', 'Finance'];
-    const industriesEN = ['FMCG', 'Automotive', 'Agriculture', 'Energy', 'Finance'];
+    const industriesPL = ['FMCG', 'Żywność', 'Automotive', 'Rolnictwo', 'Energia', 'Finanse'];
+    const industriesEN = ['FMCG', 'Food', 'Automotive', 'Agriculture', 'Energy', 'Finance'];
     let industryIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

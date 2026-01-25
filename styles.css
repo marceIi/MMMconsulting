@@ -174,6 +174,12 @@ body {
     overflow: hidden;
 }
 
+/* Compact Hero */
+.hero.hero-compact {
+    min-height: auto;
+    padding: 100px 20px 40px;
+}
+
 .hero-background {
     position: absolute;
     top: 0;
@@ -221,6 +227,11 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.hero-compact .hero-title {
+    padding-top: 20px;
+    margin-bottom: 16px;
+}
+
 .hero-tagline {
     font-size: clamp(1.25rem, 2.5vw, 2rem);
     font-weight: 400;
@@ -233,23 +244,94 @@ body {
     font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 300;
     max-width: 800px;
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
     line-height: 1.7;
     opacity: 0.95;
 }
 
+.hero-compact .hero-subtitle {
+    margin-bottom: 20px;
+}
+
+/* Benefits List (bullet points in three columns) */
+.benefits-list {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto 10px;
+    text-align: left;
+    list-style: none;
+    padding: 0 30px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 30px;
+}
+
+.benefits-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 0;
+    font-size: clamp(0.85rem, 1.4vw, 0.95rem);
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.benefits-list li::before {
+    content: "•";
+    position: absolute;
+    left: 4px;
+    color: var(--accent-yellow);
+    font-size: 1.4rem;
+    line-height: 1;
+    top: 0;
+}
+
 /* Hero Description after benefits */
 .hero-description {
-    margin-top: 50px;
-    max-width: 900px;
+    margin-top: 30px;
+    max-width: 100%;
+    width: calc(100% - 60px);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 40px;
+    padding: 30px 40px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Standalone Description Section after Services */
+.hero-description-section {
+    background: var(--white);
+    padding: 80px 0;
+}
+
+.hero-description-section .hero-description {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 60px 70px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hero-description-section .hero-description p {
+    color: var(--text-dark);
+    font-size: 1.25rem;
+    line-height: 1.9;
+    margin-bottom: 24px;
+}
+
+.hero-description-section .hero-description p:last-child {
+    margin-bottom: 0;
+}
+
+.hero-compact .hero-description {
+    margin-top: 20px;
+    padding: 24px 40px;
 }
 
 .hero-description p {
@@ -334,10 +416,139 @@ body {
 
 /* Services Section */
 .services {
-    padding: 100px 20px;
+    padding: 80px 20px;
     background: var(--white);
 }
 
+/* Compact Services Grid - all 12 visible */
+.services-grid-compact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto 30px;
+}
+
+.service-card-compact {
+    background: var(--off-white);
+    border-radius: 12px;
+    padding: 20px 16px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100px;
+}
+
+.service-card-compact:hover {
+    border-color: var(--primary-green);
+    box-shadow: 0 10px 30px rgba(45, 122, 79, 0.15);
+    transform: translateY(-3px);
+}
+
+.service-card-compact.active {
+    border-color: var(--primary-green);
+    background: rgba(45, 122, 79, 0.08);
+}
+
+.service-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-number-small {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--primary-green);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.service-title-compact {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Service Detail Panel */
+.service-detail-panel {
+    display: none;
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--off-white);
+    border-radius: 16px;
+    padding: 40px;
+    border: 2px solid var(--primary-green);
+    position: relative;
+    animation: fadeInUp 0.3s ease;
+}
+
+.service-detail-panel.active {
+    display: block;
+}
+
+.service-detail-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: var(--primary-green);
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.service-detail-close:hover {
+    background: var(--dark-green);
+    transform: scale(1.1);
+}
+
+.service-detail-content h3 {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin-bottom: 16px;
+}
+
+.service-detail-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+
+.service-detail-content ul {
+    padding-left: 24px;
+    margin-top: 16px;
+}
+
+.service-detail-content li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+/* Legacy carousel styles (kept for reference) */
 .services-carousel-wrapper {
     display: flex;
     align-items: center;
@@ -698,6 +909,11 @@ body {
     transform: scale(1.2);
 }
 
+/* White background for team photo */
+.team-photo-white-bg {
+    background: #ffffff;
+}
+
 .team-name {
     font-size: 1.5rem;
     font-weight: 700;
@@ -714,17 +930,56 @@ body {
     line-height: 1.7;
     color: var(--text-light);
     margin-bottom: 12px;
-    text-align: left;
+    text-align: justify;
 }
 
-.team-bio:last-child {
-    margin-bottom: 0;
+.team-bio:last-of-type {
+    margin-bottom: 20px;
+}
+
+/* Team Contact */
+.team-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(45, 122, 79, 0.2);
+}
+
+.team-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--off-white);
+}
+
+.team-contact-item:hover {
+    background: var(--primary-green);
+    color: white;
+}
+
+.team-contact-icon {
+    font-size: 1rem;
+    opacity: 0.7;
 }
 
 /* Capabilities Section */
 .capabilities {
     padding: 100px 20px;
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+}
+
+/* Subtle Capabilities */
+.capabilities.capabilities-subtle {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, rgba(45, 122, 79, 0.9) 0%, rgba(27, 94, 32, 0.85) 100%);
 }
 
 .capabilities .section-title {
@@ -735,6 +990,10 @@ body {
     background: linear-gradient(90deg, var(--accent-yellow), var(--white));
 }
 
+.capabilities-subtle .section-title {
+    margin-bottom: 40px;
+}
+
 .capabilities-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -743,10 +1002,15 @@ body {
     margin: 0 auto;
 }
 
+.capabilities-subtle .capabilities-grid {
+    gap: 30px;
+}
+
 .capability-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 30px 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -754,6 +1018,14 @@ body {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
+    min-height: 180px;
+}
+
+.capabilities-subtle .capability-item {
+    padding: 24px 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    min-height: 160px;
 }
 
 .capability-item:hover {
@@ -762,10 +1034,22 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+.capabilities-subtle .capability-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
 .capability-icon {
     width: 170px;
     height: 170px;
     margin-bottom: 20px;
+}
+
+.capabilities-subtle .capability-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+    opacity: 0.7;
 }
 
 .capability-icon img {
@@ -781,6 +1065,10 @@ body {
     line-height: 1;
 }
 
+.capabilities-subtle .capability-counter {
+    font-size: 2.5rem;
+}
+
 .capability-number-row {
     display: flex;
     align-items: baseline;
@@ -794,12 +1082,20 @@ body {
     line-height: 1;
 }
 
+.capabilities-subtle .capability-plus {
+    font-size: 2.5rem;
+}
+
 .capability-suffix {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--accent-yellow);
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+.capabilities-subtle .capability-suffix {
+    font-size: 1.1rem;
 }
 
 .capability-label {
@@ -809,10 +1105,19 @@ body {
     margin-top: 10px;
 }
 
+.capabilities-subtle .capability-label {
+    font-size: 0.95rem;
+    margin-top: 8px;
+}
+
 .capability-sublabel {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.7);
     margin-top: 5px;
+}
+
+.capabilities-subtle .capability-sublabel {
+    font-size: 0.8rem;
 }
 
 .capability-industries {
@@ -824,11 +1129,21 @@ body {
     margin-top: 20px;
 }
 
+.capabilities-subtle .capability-industries {
+    gap: 10px;
+    min-height: 80px;
+    margin-top: 10px;
+}
+
 .capability-industries-title {
     font-size: 2.2rem;
     font-weight: 700;
     color: var(--white);
     line-height: 1;
+}
+
+.capabilities-subtle .capability-industries-title {
+    font-size: 1.6rem;
 }
 
 .typing-wrapper {
@@ -886,8 +1201,12 @@ body {
 }
 
 @media (max-width: 992px) {
-    .benefits-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .benefits-list {
+        padding: 0 20px;
+    }
+    
+    .services-grid-compact {
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .about-content {
@@ -969,13 +1288,33 @@ body {
         margin-left: 0;
     }
     
-    .benefits-grid {
+    .benefits-list {
         grid-template-columns: 1fr;
-        gap: 16px;
+        padding: 0 16px;
     }
     
-    .benefit-card {
-        padding: 24px 20px;
+    .benefits-list li {
+        padding-left: 24px;
+        font-size: 0.95rem;
+    }
+    
+    .services-grid-compact {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .service-card-compact {
+        padding: 16px 12px;
+        min-height: 90px;
+    }
+    
+    .service-title-compact {
+        font-size: 0.8rem;
+    }
+    
+    .service-detail-panel {
+        padding: 24px;
+        margin: 0 10px;
     }
     
     .contact-info {
@@ -987,12 +1326,12 @@ body {
         padding: 30px 20px;
     }
     
-    .hero {
-        padding: 90px 16px 50px;
+    .hero.hero-compact {
+        padding: 90px 16px 30px;
     }
     
     .hero-subtitle {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     
     .service-card {
@@ -1017,7 +1356,7 @@ body {
     }
     
     .services {
-        padding: 60px 16px;
+        padding: 50px 16px;
     }
     
     .capabilities-grid {
@@ -1031,6 +1370,15 @@ body {
         font-size: 2.5rem;
     }
     
+    .capabilities-subtle .capability-counter,
+    .capabilities-subtle .capability-plus {
+        font-size: 2rem;
+    }
+    
+    .capabilities-subtle .capability-industries-title {
+        font-size: 1.3rem;
+    }
+
     .capability-counter {
         font-size: 2.5rem;
     }
@@ -1043,53 +1391,13 @@ body {
     .capabilities {
         padding: 60px 16px;
     }
-}
-
-@media (max-width: 480px) {
-    .nav-container {
-        height: 60px;
+    
+    .capabilities.capabilities-subtle {
+        padding: 40px 16px;
     }
     
-    .logo img {
-        height: 38px;
-    }
-    
-    .hero-title {
-        font-size: 1.75rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.95rem;
-    }
-    
-    .benefit-number {
-        width: 38px;
-        height: 38px;
-        font-size: 1.1rem;
-    }
-    
-    .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 40px;
-    }
-    
-    .about, .contact, .team {
-        padding: 60px 16px;
-    }
-    
-    .team-photo {
-        width: 180px;
-        height: 180px;
-    }
-    
-    .team-name {
-        font-size: 1.3rem;
-    }
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
+    .team-contact {
+        flex-direction: column;
         opacity: 0;
         transform: translateY(30px);
     }
