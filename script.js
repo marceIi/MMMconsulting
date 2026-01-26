@@ -22,7 +22,6 @@ const translations = {
         // Hero Description
         'hero.desc1': 'Właśnie na tych filarach opieramy współpracę z naszymi klientami, wspierając ich w drodze do zrównoważonego i zyskownego rozwoju.',
         'hero.desc2': 'Pomagamy zarządom, właścicielom, CFO i CSO budować stabilny, rentowny i odporny na zmiany klimatyczne biznes. Projektujemy strategię zrównoważonego rozwoju, mierzalny ślad węglowy (w tym ślad produktów), ścieżki i plany dekarbonizacji, podejście do ryzyk klimatycznych oraz raport zrównoważonego rozwoju zgodny z regulacjami i dopasowany do profilu firmy.',
-        'hero.desc3': 'Poniżej przedstawiamy zakres usług, które wspierają przejście od rozproszonych wymogów i oczekiwań rynku do spójnie zaplanowanej, biznesowo uzasadnionej transformacji Twojego biznesu.',
         
         // Services Section
         'services.title': 'Nasze Usługi',
@@ -212,7 +211,6 @@ const translations = {
         // Hero Description
         'hero.desc1': 'These are the pillars on which we base our cooperation with clients, supporting them on their journey to sustainable and profitable growth.',
         'hero.desc2': 'We help boards, owners, CFOs, and CSOs build a stable, profitable, and climate-resilient business. We design sustainability strategies, measurable carbon footprints (including product footprints), decarbonization pathways and plans, approaches to climate risks, and sustainability reports aligned with regulations and tailored to the company\'s profile.',
-        'hero.desc3': 'Below, we present the range of services that support the transition from scattered requirements and market expectations to a coherently planned, business-justified transformation of your business.',
         
         // Services Section
         'services.title': 'Our Services',
