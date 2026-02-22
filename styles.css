@@ -441,6 +441,7 @@ body {
     align-items: center;
     text-align: center;
     min-height: 100px;
+    position: relative;
 }
 
 .service-card-compact:hover {
@@ -481,6 +482,35 @@ body {
     color: var(--text-dark);
     line-height: 1.3;
     margin: 0;
+}
+
+.service-expand-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: var(--primary-green);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50%;
+    line-height: 1;
+    padding-bottom: 2px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+}
+
+.service-card-compact:hover .service-expand-icon {
+    background: var(--dark-green);
+    transform: scale(1.1);
+}
+
+.service-card-compact.active .service-expand-icon {
+    transform: rotate(45deg);
+    background: var(--dark-green);
 }
 
 /* Service Detail Panel */
@@ -845,8 +875,20 @@ body {
 }
 
 .contact-icon {
-    font-size: 2.5rem;
+    width: 100px;
+    height: 100px;
     margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .contact-details h3 {
@@ -880,6 +922,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 100%;
 }
 
 .team-photo {
@@ -923,6 +966,9 @@ body {
 
 .team-info {
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .team-bio {
@@ -942,7 +988,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: auto;
     padding-top: 20px;
     border-top: 1px solid rgba(45, 122, 79, 0.2);
 }
