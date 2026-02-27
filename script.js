@@ -5,7 +5,7 @@ const translations = {
         'nav.services': 'Nasze Usługi',
         'nav.about': 'O nas',
         'nav.team': 'Zespół',
-        'nav.contact': 'Kontakt',
+        'nav.contact': 'Adres',
         
         // Hero Section
         'hero.title': 'Rentowny, odporny i zrównoważony biznes',
@@ -168,9 +168,7 @@ const translations = {
         'capabilities.industries': 'Branże',
         
         // Contact Section
-        'contact.title': 'Kontakt',
-        'contact.email': 'Email',
-        'contact.phone': 'Telefon',
+        'contact.title': 'Adres',
         'contact.address': 'Adres',
         'contact.addressValue': 'Grzybowska 87, 00-844 Warszawa',
         
@@ -194,7 +192,7 @@ const translations = {
         'nav.services': 'Our Services',
         'nav.about': 'About Us',
         'nav.team': 'Team',
-        'nav.contact': 'Contact',
+        'nav.contact': 'Address',
         
         // Hero Section
         'hero.title': 'Profitable, Resilient and Sustainable Business',
@@ -357,9 +355,7 @@ const translations = {
         'capabilities.industries': 'Industries',
         
         // Contact Section
-        'contact.title': 'Contact',
-        'contact.email': 'Email',
-        'contact.phone': 'Phone',
+        'contact.title': 'Address',
         'contact.address': 'Address',
         'contact.addressValue': 'Grzybowska 87, 00-844 Warsaw',
         
