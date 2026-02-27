@@ -854,18 +854,21 @@ body {
 }
 
 .contact-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-item {
-    text-align: center;
-    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 40px 60px;
     background: var(--off-white);
     border-radius: 16px;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    max-width: 600px;
+    width: 100%;
 }
 
 .contact-item:hover {
@@ -875,14 +878,12 @@ body {
 }
 
 .contact-icon {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 16px;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .contact-icon img {
@@ -891,16 +892,21 @@ body {
     object-fit: contain;
 }
 
+.contact-details {
+    text-align: left;
+}
+
 .contact-details h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--primary-green);
     margin-bottom: 8px;
 }
 
 .contact-details p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: var(--text-light);
+    line-height: 1.5;
 }
 
 /* Team Section */
@@ -1364,12 +1370,12 @@ body {
     }
     
     .contact-info {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
     }
     
     .contact-item {
-        padding: 30px 20px;
+        padding: 30px 24px;
     }
     
     .hero.hero-compact {
