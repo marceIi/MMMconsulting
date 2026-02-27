@@ -896,11 +896,11 @@ body {
     text-align: left;
 }
 
-.contact-details h3 {
-    font-size: 1.2rem;
+.contact-details .address-text {
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--primary-green);
-    margin-bottom: 8px;
+    line-height: 1.5;
 }
 
 .contact-details p {
