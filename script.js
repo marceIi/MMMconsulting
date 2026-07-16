@@ -2,180 +2,299 @@
 const translations = {
     pl: {
         // Navigation
-        'nav.services': 'Nasze Usługi',
-        'nav.about': 'O nas',
-        'nav.team': 'Zespół',
-        'nav.contact': 'Adres',
-        
-        // Hero Section
-        'hero.title': 'Rentowny, odporny i zrównoważony biznes',
-        'hero.tagline': 'Kompleksowe podejście do zrównoważonego rozwoju',
-        'hero.subtitle': 'Jeśli chcesz wzmacniać przewagi konkurencyjne Twojej firmy, aby pozwalały na szybszy, bardziej zyskowny i zgodny z zasadami zrównoważonej transformacji rozwój, postaw na:',
-        
-        // Benefits (bullet points)
-        'benefits.1': 'wzmocnienie stabilności i rentowności dzięki lepszej kontroli kosztów energii, surowców i materiałów oraz skutecznemu zarządzaniu ryzykiem klimatycznym i regulacyjnym;',
-        'benefits.2': 'budowanie realnej przewagi w sprzedaży i przetargach u kluczowych klientów w oparciu o standardy zrównoważonego rozwoju;',
-        'benefits.3': 'otwarcie dostępu do dotacji, ulg i korzystniejszego finansowania inwestycji rozwojowych dzięki spełnianiu kryteriów środowiskowych;',
-        'benefits.4': 'wdrożenie przejrzystego, mierzalnego i audytowalnego planu dekarbonizacji oraz poprawę efektywności operacyjnej – zarówno wewnątrz firmy, jak i w całym łańcuchu dostaw;',
-        'benefits.5': 'zapewnienie pełnej zgodności z wymaganiami regulacyjnymi i raportowymi w zakresie adekwatnym do skali oraz profilu Twojej działalności.',
-        
-        // Hero Description
-        'hero.desc1': 'Właśnie na tych filarach opieramy współpracę z naszymi klientami, wspierając ich w drodze do zrównoważonego i zyskownego rozwoju.',
-        'hero.desc2': 'Pomagamy zarządom, właścicielom, CFO i CSO budować stabilny, rentowny i odporny na zmiany klimatyczne biznes. Projektujemy strategię zrównoważonego rozwoju, mierzalny ślad węglowy (w tym ślad produktów), ścieżki i plany dekarbonizacji, podejście do ryzyk klimatycznych oraz raport zrównoważonego rozwoju zgodny z regulacjami i dopasowany do profilu firmy.',
-        
-        // Services Section
-        'services.title': 'Nasze Usługi',
-        'services.scope': 'W ramach usługi:',
-        'services.more': 'Więcej',
-        'services.less': 'Mniej',
-        
-        // Service short names for compact grid
-        'service1.short': 'Analiza luk regulacyjnych ESG',
-        'service2.short': 'Analiza podwójnej istotności',
-        'service3.short': 'Strategia zrównoważonego rozwoju',
-        'service4.short': 'Ślad węglowy i ślad produktu',
-        'service5.short': 'Ścieżki i plan dekarbonizacji',
-        'service6.short': 'Dekarbonizacja dostawców',
-        'service7.short': 'Taksonomia UE',
-        'service8.short': 'Dotacje i finansowanie',
-        'service9.short': 'Raport zrównoważonego rozwoju',
-        'service10.short': 'Offsetowanie emisji',
-        'service11.short': 'Partner ESG (abonament)',
-        'service12.short': 'Rozwój firmy',
-        
-        // Service 1
-        'service1.title': 'Analiza luk regulacyjnych ESG (CSRD, CSDDD, VSME itd.)',
-        'service1.desc': 'Analizujemy otoczenie regulacyjne Twojej firmy i zamieniamy gąszcz przepisów w czytelną mapę obowiązków, ryzyk i priorytetów działań. Celem jest jasność – co jest konieczne, co opłacalne, a co zbędne.',
-        'service1.li1': 'określamy, które regulacje zrównoważonego rozwoju (CSRD/ESRS, CSDDD, VSME, Taksonomia UE, regulacje dot. greenwashingu) faktycznie dotyczą Twojej firmy – teraz i w perspektywie kilku lat,',
-        'service1.li2': 'diagnozujemy obecny poziom przygotowania organizacji: dane, procesy, polityki, raportowanie, governance,',
-        'service1.li3': 'identyfikujemy kluczowe luki oraz obszary podwyższonego ryzyka,',
-        'service1.li4': 'przygotowujemy syntetyczny raport „gdzie jesteśmy vs. gdzie powinniśmy być",',
-        'service1.li5': 'układamy priorytetowy plan działań na 6–24 miesiące.',
-        
-        // Service 2
-        'service2.title': 'Analiza podwójnej istotności (Double Materiality Assessment)',
-        'service2.desc': 'Porządkujemy tematy zrównoważonego rozwoju pod kątem ich znaczenia dla Twojej firmy i otoczenia, tak aby skupić zasoby tam, gdzie efekt biznesowy i regulacyjny jest największy.',
-        'service2.li1': 'projektujemy podejście do analizy podwójnej istotności zgodne z ESRS/VSME,',
-        'service2.li2': 'prowadzimy warsztaty z kluczowymi osobami (zarząd, finanse, operacje, HR, zakupy, sprzedaż),',
-        'service2.li3': 'zbieramy i analizujemy dane z ankiet i wywiadów wewnętrznych oraz – gdy to potrzebne – zewnętrznych,',
-        'service2.li4': 'oceniamy wpływ poszczególnych tematów zrównoważonego rozwoju na firmę oraz wpływ firmy na otoczenie,',
-        'service2.li5': 'opracowujemy matrycę podwójnej istotności oraz rekomendujemy priorytety zrównoważonego rozwoju.',
-        
-        // Service 3
-        'service3.title': 'Strategia zrównoważonego rozwoju zintegrowana ze strategią biznesową',
-        'service3.desc': 'Integrujemy strategię zrównoważonego rozwoju ze strategią biznesową tak, aby wspierało wzrost, rentowność, efektywność operacyjną i zarządzanie ryzykiem – zamiast funkcjonować obok bieżącego biznesu.',
-        'service3.li1': 'przekładamy wyniki analiz (luki regulacyjne, istotność tematów) na główne priorytety strategiczne zrównoważonego rozwoju,',
-        'service3.li2': 'definiujemy cele, KPI oraz strukturę zarządzania (role, odpowiedzialności, fora decyzyjne),',
-        'service3.li3': 'projektujemy inicjatywy ukierunkowane na optymalizację procesów oraz wykorzystania energii, surowców i zasobów naturalnych,',
-        'service3.li4': 'integrujemy cele i działania zrównoważonego rozwoju ze strategią wzrostu, rentowności i zarządzania ryzykiem – w tym klimatycznym,',
-        'service3.li5': 'przygotowujemy dokument strategii zrównoważonego rozwoju do wykorzystania wewnętrznego i zewnętrznego.',
-        
-        // Service 4
-        'service4.title': 'Ślad węglowy i ślad produktu (LCA / Product Carbon Footprint)',
-        'service4.desc': 'Dostarczamy wiarygodny, policzalny obraz emisji – zarówno na poziomie organizacji, jak i kluczowych produktów. To fundament dekarbonizacji, raportowania i rozmów z klientami oraz bankami.',
-        'service4.li1': 'projektujemy podejście do liczenia śladu węglowego (zakres 1/2/3),',
-        'service4.li2': 'zbieramy i weryfikujemy dane niezbędne do obliczeń,',
-        'service4.li3': 'obliczamy ślad węglowy organizacji oraz – tam, gdzie to zasadne – ślad węglowy produktów (LCA/PCF),',
-        'service4.li4': 'identyfikujemy główne źródła emisji i obszary o największym potencjale redukcji,',
-        'service4.li5': 'przygotowujemy wyniki w formie zrozumiałej dla zarządu, klientów, banków i audytorów.',
-        
-        // Service 5
-        'service5.title': 'Ścieżki i plan dekarbonizacji',
-        'service5.desc': 'Zamieniamy dane o emisjach na uzgodnioną, policzalną i biznesowo uzasadnioną ścieżkę redukcji, która łączy perspektywy zarządu, finansów i operacji.',
-        'service5.li1': 'opracowujemy scenariusze dekarbonizacji w uzgodnionych horyzontach (np. 2030/2040/2050),',
-        'service5.li2': 'analizujemy wpływ scenariuszy na emisje, CAPEX/OPEX oraz kluczowe obszary działalności,',
-        'service5.li3': 'moderujemy proces wyboru scenenariusza docelowego z udziałem kluczowych decydentów,',
-        'service5.li4': 'przygotowujemy szczegółowy plan dekarbonizacji: projekty, harmonogram, odpowiedzialności, KPI,',
-        'service5.li5': 'proponujemy sposób monitorowania postępów i raportowania.',
-        
-        // Service 6
-        'service6.title': 'Program dekarbonizacji dostawców ',
-        'service6.desc': 'Porządkujemy i rozwijamy podejście do emisji w łańcuchu dostaw – tam, gdzie coraz częściej koncentrują się wymagania klientów, grup kapitałowych i regulatorów.',
-        'service6.li1': 'segmentujemy dostawców według wpływu na emisje, skali współpracy i znaczenia biznesowego,',
-        'service6.li2': 'przygotowujemy narzędzia współpracy z dostawcami (ankiety, kryteria, kodeks dostawcy, zapisy umowne),',
-        'service6.li3': 'analizujemy dane od dostawców i identyfikujemy obszary o największym potencjale redukcji,',
-        'service6.li4': 'współtworzymy z kluczowymi dostawcami plany redukcji emisji,',
-        'service6.li5': 'projektujemy proces monitorowania postępów i cyklicznych przeglądów.',
-        
-        // Service 7
-        'service7.title': 'Taksonomia UE – kwalifikacja działalności i wskaźniki',
-        'service7.desc': 'Dostarczamy jasny obraz, jaka część Twojej działalności jest „zielona" w rozumieniu Taksonomii UE – co ma rosnące znaczenie w rozmowach z bankami, inwestorami i grupą kapitałową.',
-        'service7.li1': 'mapujemy działalności firmy na kategorie Taksonomii UE,',
-        'service7.li2': 'analizujemy spełnienie kryteriów „eligible" i „aligned" dla poszczególnych obszarów,',
-        'service7.li3': 'wyliczamy wskaźniki udziału przychodów, CAPEX i OPEX związanych z działalnościami objętymi Taksonomią,',
-        'service7.li4': 'przygotowujemy materiały prezentujące wyniki dla zarządu, banków, inwestorów i grupy kapitałowej,',
-        'service7.li5': 'wskazujemy kierunki zwiększania udziału działalności zgodnej z Taksonomią w kolejnych latach.',
-        
-        // Service 8
-        'service8.title': 'Dotacje i finansowanie zielonych inwestycji',
-        'service8.desc': 'Łączymy projekty środowiskowe i klimatyczne Twojej firmy z konkretnymi możliwościami finansowania – dotacjami oraz zielonymi i sustainability-linked produktami bankowymi.',
-        'service8.li1': 'analizujemy portfel planowanych inwestycji (OZE, efektywność energetyczna, modernizacje, nowe technologie),',
-        'service8.li2': 'dobieramy adekwatne programy krajowe, unijne oraz rozwiązania bankowe,',
-        'service8.li3': 'przygotowujemy merytoryczną część zrównoważonego rozwoju/klimat oraz wskaźniki (w tym związane z Taksonomią UE),',
-        'service8.li4': 'wspieramy przy tworzeniu dokumentacji aplikacyjnej i odpowiedziach na pytania instytucji finansujących,',
-        'service8.li5': 'pomagamy powiązać projekty inwestycyjne z przyjętą strategią zrównoważonego rozwoju i planem dekarbonizacji.',
-        
-        // Service 9
-        'service9.title': 'Raport zrównoważonego rozwoju dostosowany do regulacji i potrzeb biznesu',
-        'service9.desc': 'Projektujemy raport tak, aby jednocześnie spełniał wymogi regulacyjne i realnie wspierał zarządzanie oraz komunikację z rynkiem – wewnątrz i na zewnątrz organizacji.',
-        'service9.li1': 'dobieramy odpowiedni format raportu (CSRD/ESRS lub ESG/VSME, w zależności od profilu firmy),',
-        'service9.li2': 'projektujemy strukturę raportu oraz zestaw wskaźników,',
-        'service9.li3': 'organizujemy proces zbierania i weryfikacji danych z różnych części organizacji,',
-        'service9.li4': 'przygotowujemy propozycje treści (część opisowa i analityczna) we współpracy z Twoim zespołem,',
-        'service9.li5': 'doradzamy, jak raport wykorzystywać w relacjach z zarządem, bankami, inwestorami, klientami i pracownikami.',
-        
-        // Service 10
-        'service10.title': 'Odpowiedzialne offsetowanie emisji',
-        'service10.desc': 'Porządkujemy podejście do kompensacji emisji tak, aby uzupełniało działania redukcyjne i wzmacniało wiarygodność klimatyczną firmy, a nie generowało ryzyka greenwashingu.',
-        'service10.li1': 'określamy rolę offsetu w strategii klimatycznej Twojej firmy (zakres, kolejność względem działań redukcyjnych, horyzont czasowy),',
-        'service10.li2': 'definiujemy kryteria wyboru projektów offsetowych (standardy, dodatkowość, trwałość, ryzyko),',
-        'service10.li3': 'rekomendujemy portfel projektów offsetowych oraz sposób ich dokumentowania,',
-        'service10.li4': 'przygotowujemy zasady raportowania i komunikacji dotyczącej kompensacji emisji,',
-        'service10.li5': 'łączymy podejście do offsetu z szerszą strategią zrównoważonego rozwoju i dekarbonizacji.',
-        
-        // Service 11
-        'service11.title': 'Partner w zrównoważonym rozwoju – stałe wsparcie w ESG (abonament)',
-        'service11.desc': 'Zapewniamy stałe, elastyczne wsparcie w obszarze ESG dla firm, które chcą mieć temat pod kontrolą bez budowania rozbudowanych struktur wewnętrznych.',
-        'service11.li1': 'przygotowujemy cykliczne (np. kwartalne) podsumowania kluczowych zmian regulacyjnych i rynkowych w ESG wraz z rekomendacjami działań,',
-        'service11.li2': 'utrzymujemy z Tobą pod kontrolą podstawowy zestaw wskaźników zrównoważonego rozwoju,',
-        'service11.li3': 'udostępniamy pulę godzin konsultacyjnych na bieżące potrzeby (ankiety klientów, pytania banków, materiały dla zarządu i komitetów),',
-        'service11.li4': 'uczestniczymy w wybranych spotkaniach wewnętrznych jako zewnętrzny partner ESG,',
-        'service11.li5': 'dostosowujemy zakres współpracy do wielkości, branży i dojrzałości Twojej organizacji w obszarze zrównoważonego rozwoju.',
-        
-        // Service 12
-        'service12.title': 'Pomoc w rozwoju Twojej firmy',
-        'service12.desc': 'Przygotowujemy plan rozwoju lub audytujemy istniejący. Określamy które działania są dla firmy najważniejsze i w jaki sposób są wewnętrznie powiązane i zależne.',
-        'service12.li1': 'sprawdzamy i ulepszamy działania prowadzące do osiągnięcia celów i proponujemy ograniczanie / eliminację działań bezwartościowych,',
-        'service12.li2': 'usprawniamy obszary Sprzedaży, Marketingu, B+R, Łańcucha Dostaw, Produkcji, Kapitału Ludzkiego, Finansów i Controllingu,',
-        'service12.li3': 'pomagamy rozwinąć / wdrożyć zarządzanie ryzykiem i audyt wewnętrzny,',
-        'service12.li4': 'dbamy o rozwój komunikacji i kultury organizacyjnej,',
-        'service12.li5': 'tworzymy plan działań prowadzących do efektywnej sprzedaży firmy lub wypracowujemy etapowy plan sukcesji.',
-        
-        // About Section
-        'about.title': 'O nas',
-        'about.p1': 'Jesteśmy jednocześnie praktykami biznesu i konsultantami z wieloletnim doświadczeniem. Łączymy realne doświadczenia w prowadzeniu i zarządzaniu firmami w Polsce i za granicą z perspektywą doradczą, co pozwala nam projektować rozwiązania, które da się wdrożyć w praktyce, a nie tylko opisać w prezentacji.',
-        'about.p2': 'Na co dzień współpracujemy z regulatorami na poziomie Unii Europejskiej (w tym instytucjami odpowiedzialnymi za regulacje i standardy raportowania niefinansowego), organizacjami sektorowymi, europejskimi bankami oraz firmami doradczymi. Dzięki temu rozumiemy, jak wymagania regulacyjne ESG przekładają się na oczekiwania rynku i kryteria finansowania przedsiębiorstw.',
-        'about.p3': 'Naszą ofertę opieramy na doświadczeniu w zarządzaniu firmami produkcyjnymi, handlowymi i usługowymi. Mówimy prostym i konkretnym językiem – bez korporacyjnej nowomowy – koncentrując się na praktycznym zrozumieniu wyzwań transformacji ESG, szukaniu rozwiązań oraz ich skutecznym wdrażaniu.',
-        'about.p4': 'Wierzymy, że rację ma nie ten, kto miał ją na początku drogi, lecz ten, kto potrafił przełożyć ją na konkretne działania i wyniki. Efektywność wdrożonych działań mierzymy przede wszystkim rezultatem finansowym i większą odpornością biznesu, a nie liczbą slajdów i raportów.',
-        'about.p5': 'Pomagamy łączyć tematykę ESG ze strategią i długoterminowymi celami przedsiębiorstwa, które szuka najlepszych dróg rozwoju w dynamicznie zmieniającym się otoczeniu regulacyjnym i rynkowym. Nasze doświadczenie pokazuje, że firmy, które zintegrowały ESG ze strategicznym i operacyjnym zarządzaniem biznesem, budują trwałą przewagę konkurencyjną.',
-        
-        // Capabilities Section
-        'capabilities.title': 'Nasze Kompetencje',
-        'capabilities.revenue': 'Przychody Klientów',
-        'capabilities.revenue.sub': 'na rok',
-        'capabilities.projects': 'Projektów ESG',
-        'capabilities.implementations': 'Wdrożeń',
-        'capabilities.industries': 'Branże',
-        
-        // Contact Section
-        'contact.title': 'Adres',
-        'contact.address': 'Adres',
-        'contact.addressValue': 'Grzybowska 87, 00-844 Warszawa',
-        
-        // Footer
-        'footer.copyright': '© 2025 MMM Consulting. Wszystkie prawa zastrzeżone.',
-        
-        // Team Section
+        'nav.outsourced': 'Outsourced ESG',
+        'nav.raport': 'Raport ESG',
+        'nav.redukcja': 'Redukcja kosztów i emisji',
+        'nav.rentownosc': 'Większa rentowność',
+        'nav.dlaczegomy': 'Dlaczego my',
+        'nav.kontakt': 'Kontakt',
+
+        // ===== Home =====
+        'home.tagline': 'Zamieniamy wymagania ESG w wymierne oszczędności, wyższą sprzedaż i przewagę konkurencyjną.',
+        'home.subtitle': 'Outsourcing ESG, raportowanie CSRD i redukcja kosztów dla firm produkcyjnych i FMCG.',
+        'home.hint': 'Wybierz obszar, który Cię interesuje',
+        'home.card.outsourced.desc': 'Pełen outsourcing działu ESG w modelu abonamentowym.',
+        'home.card.raport.desc': 'Raporty zrównoważonego rozwoju zgodne z CSRD i ESRS.',
+        'home.card.redukcja.desc': 'Redukcja kosztów energii, materiałów, opakowań i emisji.',
+        'home.card.rentownosc.desc': 'Wyższa EBITDA dzięki wykorzystaniu ESG jako przewagi konkurencyjnej.',
+        'home.card.dlaczegomy.desc': 'Poznaj zespół i podejście MMM Consulting.',
+        'home.card.kontakt.desc': 'Skontaktuj się i zadaj nam pytanie.',
+
+        // ===== Outsourced ESG =====
+        'outsourced.q1': 'Nie chcesz zatrudniać ESG Managera za 25-30 tys. PLN miesięcznie?',
+        'outsourced.q2': 'Potrzebujesz spełnić wymagania klientów lub inwestorów?',
+        'outsourced.statement': 'Rozwiązaniem może być stałe wsparcie w modelu abonamentowym.',
+        'outsourced.listTitle': 'Oferujemy pełen outsourcing działu ESG:',
+        'outsourced.item.1': 'przygotowanie raportów ESG',
+        'outsourced.item.2': 'prowadzenie projektu CSRD',
+        'outsourced.item.3': 'zbieranie danych z zakładów',
+        'outsourced.item.4': 'komunikacja z dostawcami',
+        'outsourced.item.5': 'liczenie śladu węglowego',
+        'outsourced.item.6': 'obsługa platform EcoVadis',
+        'outsourced.item.7': 'przygotowanie do SBTi',
+        'outsourced.item.8': 'prowadzenie KPI ESG',
+        'outsourced.item.9': 'przygotowanie materiałów dla zarządu',
+        'outsourced.item.10': 'kontakt z audytorem',
+
+        // ===== Raport ESG =====
+        'raport.title': 'Raport Zrównoważonego Rozwoju (ESG/CSRD) – czyli fundamenty, jeżeli podlegasz obowiązkowi raportowania niefinansowego.',
+        'raport.intro': 'MMM Consulting wspiera firmy w przygotowaniu raportów zrównoważonego rozwoju zgodnych z wymaganiami CSRD, ESRS oraz oczekiwaniami klientów, instytucji finansowych i partnerów biznesowych. Naszym celem nie jest jedynie przygotowanie raportu, ale stworzenie dokumentu, który wspiera rozwój biznesu, buduje wiarygodność i ułatwia pozyskiwanie nowych kontraktów.',
+
+        'raport.scope.sectionTitle': 'Zakres usługi',
+        'raport.scope.hint': 'Kliknij kartę, aby zobaczyć szczegóły',
+
+        'raportscope.1.short': 'Analiza podwójnej istotności',
+        'raportscope.1.title': 'Analiza podwójnej istotności (Double Materiality Assessment)',
+        'raportscope.1.li.1': 'identyfikacja kluczowych wpływów, ryzyk i szans związanych ze zrównoważonym rozwojem',
+        'raportscope.1.li.2': 'mapowanie interesariuszy',
+        'raportscope.1.li.3': 'warsztaty z kadrą zarządzającą',
+        'raportscope.1.li.4': 'określenie tematów podlegających raportowaniu',
+
+        'raportscope.2.short': 'Analiza luki',
+        'raportscope.2.title': 'Analiza luki (Gap Analysis)',
+        'raportscope.2.li.1': 'ocena gotowości organizacji do raportowania',
+        'raportscope.2.li.2': 'identyfikacja brakujących danych, procedur i polityk',
+        'raportscope.2.li.3': 'plan działań dostosowawczych',
+
+        'raportscope.3.short': 'Gromadzenie danych ESG',
+        'raportscope.3.title': 'Gromadzenie i weryfikacja danych ESG',
+        'raportscope.3.li.1': 'dane środowiskowe (emisje, energia, odpady, woda)',
+        'raportscope.3.li.2': 'dane społeczne (pracownicy, BHP, różnorodność)',
+        'raportscope.3.li.3': 'dane dotyczące ładu korporacyjnego (governance)',
+        'raportscope.3.li.4': 'wsparcie w organizacji procesów raportowych',
+
+        'raportscope.4.short': 'Obliczenie wskaźników ESG',
+        'raportscope.4.title': 'Obliczenie wskaźników ESG',
+        'raportscope.4.li.1': 'emisje gazów cieplarnianych Scope 1, 2 i 3',
+        'raportscope.4.li.2': 'zużycie energii i intensywność energetyczna',
+        'raportscope.4.li.3': 'wskaźniki pracownicze',
+        'raportscope.4.li.4': 'wskaźniki wymagane przez ESRS',
+
+        'raportscope.5.short': 'Opracowanie treści raportu',
+        'raportscope.5.title': 'Opracowanie treści raportu',
+        'raportscope.5.li.1': 'przygotowanie narracji biznesowej',
+        'raportscope.5.li.2': 'opis strategii i modelu biznesowego',
+        'raportscope.5.li.3': 'prezentacja celów, działań i wyników',
+        'raportscope.5.li.4': 'opracowanie wymaganych ujawnień zgodnych z ESRS',
+
+        'raportscope.6.short': 'Projekt graficzny i publikacja',
+        'raportscope.6.title': 'Projekt graficzny i publikacja',
+        'raportscope.6.li.1': 'profesjonalne opracowanie raportu',
+        'raportscope.6.li.2': 'wersja PDF i online',
+        'raportscope.6.li.3': 'infografiki i wizualizacja danych',
+        'raportscope.6.li.4': 'przygotowanie materiałów dla klientów, inwestorów i banków',
+
+        'raportscope.7.short': 'Przygotowanie do atestacji',
+        'raportscope.7.title': 'Przygotowanie do atestacji (assurance)',
+        'raportscope.7.li.1': 'wsparcie podczas procesu weryfikacji przez audytora',
+        'raportscope.7.li.2': 'uporządkowanie dokumentacji źródłowej',
+        'raportscope.7.li.3': 'zamknięcie uwag audytowych',
+
+        'raport.elements.sectionTitle': 'Kluczowe elementy raportu',
+        'raport.elements.subtitle': 'Raport obejmuje m.in.:',
+
+        'raportcat.profil.title': 'Profil organizacji',
+        'raportcat.profil.li.1': 'model biznesowy',
+        'raportcat.profil.li.2': 'struktura grupy',
+        'raportcat.profil.li.3': 'rynki działalności',
+        'raportcat.profil.li.4': 'strategia rozwoju',
+
+        'raportcat.strategia.title': 'Strategia zrównoważonego rozwoju',
+        'raportcat.strategia.li.1': 'cele ESG',
+        'raportcat.strategia.li.2': 'powiązanie z celami biznesowymi',
+        'raportcat.strategia.li.3': 'zarządzanie ryzykami i szansami',
+
+        'raportcat.envE.title': 'Obszar środowiskowy (E)',
+        'raportcat.envE.li.1': 'ślad węglowy Scope 1, 2 i 3',
+        'raportcat.envE.li.2': 'zużycie energii',
+        'raportcat.envE.li.3': 'efektywność energetyczna',
+        'raportcat.envE.li.4': 'gospodarka odpadami',
+        'raportcat.envE.li.5': 'zużycie wody',
+        'raportcat.envE.li.6': 'opakowania i gospodarka obiegu zamkniętego',
+        'raportcat.envE.li.7': 'działania redukujące emisje',
+
+        'raportcat.socialS.title': 'Obszar społeczny (S)',
+        'raportcat.socialS.li.1': 'zatrudnienie',
+        'raportcat.socialS.li.2': 'bezpieczeństwo pracy',
+        'raportcat.socialS.li.3': 'szkolenia i rozwój pracowników',
+        'raportcat.socialS.li.4': 'różnorodność i inkluzywność',
+        'raportcat.socialS.li.5': 'prawa człowieka',
+        'raportcat.socialS.li.6': 'relacje z lokalnymi społecznościami',
+
+        'raportcat.governanceG.title': 'Ład korporacyjny (G)',
+        'raportcat.governanceG.li.1': 'struktura zarządzania',
+        'raportcat.governanceG.li.2': 'etyka i compliance',
+        'raportcat.governanceG.li.3': 'przeciwdziałanie korupcji',
+        'raportcat.governanceG.li.4': 'system zarządzania ryzykiem',
+        'raportcat.governanceG.li.5': 'nadzór nad zagadnieniami ESG',
+
+        'raportcat.risks.title': 'Ryzyka i szanse',
+        'raportcat.risks.li.1': 'wpływ regulacji (CSRD, CSDDD, PPWR, EUDR)',
+        'raportcat.risks.li.2': 'ryzyka klimatyczne',
+        'raportcat.risks.li.3': 'ryzyka łańcucha dostaw',
+        'raportcat.risks.li.4': 'szanse związane z nowymi produktami i rynkami',
+
+        'raportcat.kpi.title': 'Cele i KPI',
+        'raportcat.kpi.li.1': 'cele redukcji emisji',
+        'raportcat.kpi.li.2': 'cele energetyczne',
+        'raportcat.kpi.li.3': 'wskaźniki efektywności ESG',
+        'raportcat.kpi.li.4': 'monitorowanie postępów',
+
+        'raport.client.sectionTitle': 'Co otrzymuje klient',
+        'raport.client.item.1': 'Raport Zrównoważonego Rozwoju zgodny z CSRD/ESRS',
+        'raport.client.item.2': 'Analiza podwójnej istotności',
+        'raport.client.item.3': 'Kalkulacja śladu węglowego Scope 1–3',
+        'raport.client.item.4': 'Matryca ryzyk i szans ESG',
+        'raport.client.item.5': 'Zestaw polityk i procedur ESG',
+        'raport.client.item.6': 'Dashboard KPI ESG dla zarządu',
+        'raport.client.item.7': 'Pakiet materiałów komunikacyjnych dla klientów, banków i inwestorów',
+        'raport.client.item.8': 'Roadmapa działań ESG na 3–5 lat',
+
+        'raport.benefits.sectionTitle': 'Korzyści biznesowe',
+        'raport.benefits.item.1': 'Spełnienie wymogów regulacyjnych',
+        'raport.benefits.item.2': 'Większa wiarygodność wobec klientów, banków i inwestorów',
+        'raport.benefits.item.3': 'Lepsza pozycja w przetargach i procesach zakupowych dużych grup kapitałowych',
+        'raport.benefits.item.4': 'Identyfikacja możliwości redukcji kosztów energii, materiałów i opakowań',
+        'raport.benefits.item.5': 'Przygotowanie organizacji do wymagań klientów w zakresie ESG',
+        'raport.benefits.item.6': 'Wsparcie wzrostu przychodów poprzez wykorzystanie zrównoważonego rozwoju jako przewagi konkurencyjnej',
+
+        // ===== Redukcja kosztów i emisji =====
+        'reduction.title': 'Zamieniamy wymagania ESG w oszczędności i przewagę konkurencyjną.',
+        'reduction.pillarLabel.1': 'Filar 1',
+        'reduction.pillarLabel.2': 'Filar 2',
+        'reduction.pillarLabel.3': 'Filar 3',
+        'reduction.pillarLabel.4': 'Filar 4',
+        'reduction.pillar.1.name': 'Carbon',
+        'reduction.pillar.1.desc': 'Scope 1, 2, 3 - ślad produktów',
+        'reduction.pillar.2.name': 'Energy',
+        'reduction.pillar.2.desc': 'monitoring energii - identyfikacja strat - redukcja kosztów',
+        'reduction.pillar.3.name': 'Packaging',
+        'reduction.pillar.3.desc': 'dane opakowaniowe - PPWR - optymalizacja materiałowa',
+        'reduction.pillar.4.name': 'Reduction',
+        'reduction.pillar.4.desc': 'plan redukcji emisji - KPI - wdrożenie i monitoring',
+
+        // ===== Większa rentowność =====
+        'profit.title': 'Zwiększamy EBITDA poprzez obniżenie kosztów i zwiększenie przychodów.',
+        'profit.hint': 'Kliknij produkt, aby zobaczyć szczegóły',
+
+        'profitproduct.1.short': 'Ochrona przed greenwashingiem',
+        'profitproduct.1.title': 'Ochrona przed ryzykiem greenwashingu (Green Claims Shield)',
+        'profitproduct.1.scopeTitle': 'Zakres:',
+        'profitproduct.1.scope.1': 'przegląd komunikacji marketingowej',
+        'profitproduct.1.scope.2': 'analiza twierdzeń środowiskowych',
+        'profitproduct.1.scope.3': 'ocena zgodności z wymogami UE',
+        'profitproduct.1.scope.4': 'identyfikacja ryzyk greenwashingu',
+        'profitproduct.1.scope.5': 'rekomendacje zmian',
+        'profitproduct.1.resultTitle': 'Rezultat:',
+        'profitproduct.1.result.1': 'bezpieczna komunikacja marketingowa',
+        'profitproduct.1.result.2': 'ograniczenie ryzyka kar i sporów',
+
+        'profitproduct.2.short': 'SBTi i EcoVadis',
+        'profitproduct.2.title': 'Przepustka do klientów wymagających SBTi i EcoVadis (ESG Market Access)',
+        'profitproduct.2.scopeTitle': 'Zakres:',
+        'profitproduct.2.scope.1': 'ślad węglowy Scope 1–3',
+        'profitproduct.2.scope.2': 'przygotowanie do SBTi',
+        'profitproduct.2.scope.3': 'przygotowanie do EcoVadis',
+        'profitproduct.2.scope.4': 'polityki ESG',
+        'profitproduct.2.scope.5': 'wsparcie dla działów zakupów i sprzedaży',
+        'profitproduct.2.resultTitle': 'Rezultat:',
+        'profitproduct.2.result.1': 'gotowość do wymagań klientów korporacyjnych',
+        'profitproduct.2.result.2': 'większa szansa na wejście do globalnych łańcuchów dostaw',
+        'profitproduct.2.result.3': 'poprawa pozycji w przetargach',
+
+        'profitproduct.3.short': 'PPWR – opakowania',
+        'profitproduct.3.title': 'Przygotowanie firmy do nowych wymagań opakowaniowych UE (PPWR READY)',
+        'profitproduct.3.scopeTitle': 'Zakres:',
+        'profitproduct.3.scope.1': 'analiza wpływu PPWR na firmę',
+        'profitproduct.3.scope.2': 'audyt portfolio opakowań',
+        'profitproduct.3.scope.3': 'ocena zgodności obecnych opakowań',
+        'profitproduct.3.scope.4': 'analiza poziomów recyklowalności',
+        'profitproduct.3.scope.5': 'identyfikacja ryzyk regulacyjnych',
+        'profitproduct.3.scope.6': 'roadmapa dostosowania do PPWR',
+        'profitproduct.3.scope.7': 'wsparcie we współpracy z dostawcami opakowań',
+        'profitproduct.3.resultTitle': 'Rezultat:',
+        'profitproduct.3.result.1': 'mapa luk zgodności',
+        'profitproduct.3.result.2': 'lista działań do wdrożenia',
+        'profitproduct.3.result.3': 'harmonogram dostosowania',
+        'profitproduct.3.result.4': 'ograniczenie ryzyka sankcji i utraty klientów',
+
+        'profitproduct.4.short': 'EUDR – łańcuch dostaw',
+        'profitproduct.4.title': 'Łańcuch dostaw wolny od ryzyka wylesiania (EUDR)',
+        'profitproduct.4.scopeTitle': 'Zakres:',
+        'profitproduct.4.scope.1': 'identyfikacja produktów objętych EUDR',
+        'profitproduct.4.scope.2': 'mapowanie dostawców',
+        'profitproduct.4.scope.3': 'analiza ryzyk geograficznych',
+        'profitproduct.4.scope.4': 'ocena gotowości dostawców',
+        'profitproduct.4.scope.5': 'przygotowanie procedur due diligence',
+        'profitproduct.4.scope.6': 'wsparcie przy zbieraniu danych geolokalizacyjnych',
+        'profitproduct.4.resultTitle': 'Rezultat:',
+        'profitproduct.4.result.1': 'mapa ryzyk EUDR',
+        'profitproduct.4.result.2': 'procedury zgodności',
+        'profitproduct.4.result.3': 'plan działań dla dostawców',
+
+        'profitproduct.5.short': 'Zielone Oszczędności',
+        'profitproduct.5.title': 'Zielone Oszczędności – program redukcji kosztów i emisji',
+        'profitproduct.5.intro.1': 'Obniżamy koszty operacyjne poprzez dekarbonizację i poprawę efektywności.',
+        'profitproduct.5.intro.2': 'Pomagamy firmom zamieniać zrównoważony rozwój z obowiązku regulacyjnego w realne źródło oszczędności i wzrostu rentowności.',
+        'profitproduct.5.intro.3': 'W ciągu 6–8 tygodni identyfikujemy działania, które pozwalają ograniczyć koszty energii, surowców, opakowań, transportu i zakupów, jednocześnie zmniejszając ślad środowiskowy przedsiębiorstwa.',
+        'profitproduct.5.challengesTitle': 'Typowe wyzwania naszych klientów:',
+        'profitproduct.5.challenges.1': 'rosnące koszty energii, produkcji i logistyki',
+        'profitproduct.5.challenges.2': 'presja na marże wynikająca z rosnących cen surowców',
+        'profitproduct.5.challenges.3': 'ESG postrzegane jako koszt zamiast narzędzia zwiększania efektywności',
+        'profitproduct.5.challenges.4': 'brak danych pokazujących zależność między emisjami a kosztami operacyjnymi',
+        'profitproduct.5.challenges.5': 'nieefektywna struktura opakowań i łańcucha dostaw',
+        'profitproduct.5.challenges.6': 'rosnące wymagania klientów dotyczące dekarbonizacji i raportowania',
+        'profitproduct.5.howTitle': 'Jak pomagamy:',
+        'profitproduct.5.howIntro': 'Przeprowadzamy kompleksową analizę procesów operacyjnych i łańcucha dostaw, aby zidentyfikować działania przynoszące najszybszy i największy efekt finansowy.',
+        'profitproduct.5.scopeTitle': 'Zakres projektu obejmuje:',
+        'profitproduct.5.scope.1': 'analizę kosztów i emisji w całym łańcuchu wartości',
+        'profitproduct.5.scope.2': 'identyfikację szybkich oszczędności możliwych do wdrożenia w ciągu kilku tygodni',
+        'profitproduct.5.scope.3': 'optymalizację bazy dostawców pod kątem kosztów, odległości i wyników ESG',
+        'profitproduct.5.scope.4': 'optymalizację opakowań poprzez redukcję materiałów, zmianę surowców i poprawę efektywności logistycznej',
+        'profitproduct.5.scope.5': 'optymalizację transportu i logistyki',
+        'profitproduct.5.scope.6': 'identyfikację możliwości poprawy efektywności energetycznej i wykorzystania zasobów',
+        'profitproduct.5.scope.7': 'priorytetyzację inicjatyw według potencjału oszczędności, zwrotu z inwestycji (ROI) oraz łatwości wdrożenia',
+        'profitproduct.5.resultsTitle': 'Rezultaty projektu:',
+        'profitproduct.5.results.1': 'mapę możliwości redukcji kosztów w krótkim, średnim i długim horyzoncie',
+        'profitproduct.5.results.2': 'identyfikację oszczędności na poziomie produktów, procesów i zakładów',
+        'profitproduct.5.results.3': 'szacunkową wartość możliwych oszczędności (PLN oraz wpływ na marżę)',
+        'profitproduct.5.results.4': 'listę działań typu Quick Wins do wdrożenia w ciągu 0–3 miesięcy',
+        'profitproduct.5.results.5': 'plan inicjatyw średnioterminowych (3–12 miesięcy)',
+        'profitproduct.5.results.6': 'rekomendacje zwiększające efektywność operacyjną i środowiskową',
+        'profitproduct.5.results.7': 'plan wdrożenia z przypisaniem odpowiedzialności, harmonogramem oraz wskaźnikami KPI',
+
+        'profitproduct.6.short': 'Większa Sprzedaż',
+        'profitproduct.6.title': 'Większa Sprzedaż',
+        'profitproduct.6.intro.1': 'Zwiększamy sprzedaż i marże, wykorzystując zrównoważony rozwój jako przewagę konkurencyjną.',
+        'profitproduct.6.intro.2': 'Pomagamy producentom FMCG zwiększać wartość swoich produktów, poprawiać marże oraz zdobywać nowych klientów dzięki lepszemu wykorzystaniu aspektów środowiskowych i społecznych w ofercie, komunikacji i strategii handlowej.',
+        'profitproduct.6.intro.3': 'W ciągu 6–8 tygodni identyfikujemy możliwości wzrostu sprzedaży, poprawy pozycjonowania produktów oraz budowy przewagi konkurencyjnej bez konieczności kosztownych inwestycji.',
+        'profitproduct.6.challengesTitle': 'Typowe wyzwania naszych klientów:',
+        'profitproduct.6.challenges.1': 'ograniczone możliwości podnoszenia cen bez utraty sprzedaży',
+        'profitproduct.6.challenges.2': 'silna presja cenowa ze strony sieci handlowych i marek własnych',
+        'profitproduct.6.challenges.3': 'ESG postrzegane wyłącznie jako koszt i obowiązek regulacyjny',
+        'profitproduct.6.challenges.4': 'niewykorzystany potencjał produktów w komunikacji marketingowej',
+        'profitproduct.6.challenges.5': 'trudności z wyróżnieniem oferty na tle konkurencji',
+        'profitproduct.6.howTitle': 'Jak pomagamy:',
+        'profitproduct.6.howIntro': 'Analizujemy portfolio produktów, strategię cenową i komunikację rynkową, aby wskazać obszary, w których działania związane ze zrównoważonym rozwojem mogą bezpośrednio przełożyć się na wzrost sprzedaży i poprawę rentowności.',
+        'profitproduct.6.scopeTitle': 'Zakres projektu obejmuje:',
+        'profitproduct.6.scope.1': 'analizę rentowności i potencjału sprzedażowego całego portfolio produktów',
+        'profitproduct.6.scope.2': 'identyfikację produktów, które mogą uzyskać przewagę konkurencyjną dzięki lepszemu wykorzystaniu aspektów ESG',
+        'profitproduct.6.scope.3': 'rekomendacje dotyczące pozycjonowania produktów oraz komunikacji marketingowej',
+        'profitproduct.6.scope.4': 'optymalizację strategii cenowej i promocyjnej',
+        'profitproduct.6.scope.5': 'wsparcie w przygotowaniu argumentów handlowych dla sieci detalicznych i kluczowych klientów',
+        'profitproduct.6.scope.6': 'identyfikację możliwości zwiększenia sprzedaży poprzez spełnienie wymagań klientów w zakresie zrównoważonego rozwoju',
+        'profitproduct.6.resultsTitle': 'Rezultaty projektu:',
+        'profitproduct.6.results.1': 'plan rozwoju sprzedaży dla poszczególnych grup produktów',
+        'profitproduct.6.results.2': 'rekomendacje dotyczące polityki cenowej i pozycjonowania',
+        'profitproduct.6.results.3': 'mapę możliwości zwiększenia przychodów dzięki zrównoważonemu rozwojowi',
+        'profitproduct.6.results.4': 'zestaw rekomendacji dotyczących komunikacji marketingowej, opakowań i przekazów produktowych',
+        'profitproduct.6.results.5': 'argumentację wspierającą negocjacje z sieciami handlowymi i odbiorcami B2B',
+        'profitproduct.6.results.6': 'plan wdrożenia z harmonogramem działań, odpowiedzialnościami oraz wskaźnikami KPI',
+
+        // ===== Dlaczego my =====
+        'why.title': 'Priorytet to lepszy wynik finansowy. Zamieniamy trendy i wymagania legislacji w większą sprzedaż i mniejsze koszty, tu i teraz.',
+        'why.p2': 'Najbardziej efektywne firmy nie traktują zrównoważonego rozwoju jako kwestii zgodności z regulacjami, lecz jako narzędzie wzrostu. Redukcja kosztów energii i materiałów, optymalizacja łańcucha dostaw, dostęp do nowych klientów oraz przewaga w przetargach i negocjacjach z kontrahentami – to realne korzyści biznesowe. W MMM Consulting pomagamy identyfikować i realizować te możliwości, zamieniając wymagania ESG w wymierne oszczędności i dodatkowe przychody.',
+
         'team.title': 'Nasz Zespół',
         'team.czarnecki.bio': 'Ekspert w dziedzinie zarządzania i rozwoju firm FMCG Food w Polsce i Europie: wieloletni Prezes Zarządu, Dyrektor Generalny i Członek Rad Nadzorczych firm Raisio Polska, Danone, Bongrain (Grupa Savencia), Rigas Piensaimnieks (Ryga, Łotwa), Grupa Delicpol, Bakalland SA, Bielenda SA, Sonko / Oshee Group, współzałożyciel PROTEINrise start-upu z branży foodtech oraz MMM Consulting łączącą strategie firm z tematyką ESG.',
         'team.czarnecki.bio2': 'Mentor w programach Mentors4Starters oraz Challenge Lab, członek Rady Ekspertów kierunku Prawo w Biznesie, KUL. Obszary specjalizacji to sprzedaż i marketing, innowacyjność, zarządzanie procesami i zmianą.',
@@ -185,184 +304,316 @@ const translations = {
         'team.wielkopolan.bio': 'Praktyk w prowadzeniu biznesu z 30 letnim doświadczeniem. Dyrektor Generalny / CEO firm z branży szeroko pojętego marketingu w polskich i międzynarodowych przedsięwzięciach.',
         'team.wielkopolan.bio2': 'Ekspert w zarządzaniu z wielokulturowym doświadczeniem obejmującym zarządzanie firmami i operacjami, a także sprzedażą i marketingiem. Silny lider z dużymi umiejętnościami w planowaniu strategicznym, z doświadczeniem w skutecznym wdrażaniu planów działania i osiąganiu doskonałych wyników. Konsultant i Interim Manager.',
         'team.wielkopolan.bio3': 'Doradzał wielu firmom od fazy ich powstania do pełnego rozwoju. Założył kilkanaście spółek i z sukcesem rozwijał je w następnych latach. Zrealizował kilkaset projektów, międzynarodowych i lokalnych. Wprowadzał na rynek polski płatną telewizję Canal+, gdzie pełnił funkcję Dyrektora Zarządzającego jednej ze spółek grupy Canal+ Polska. Wieloletni Prezes Polskiego Stowarzyszenia Marketingu SMB.',
-        'team.wielkopolan.bio4': 'Absolwent Ecole Superieure de Commerce et de Management (ESA3) w Paryżu (Francja). Absolwent wydziału Elektroniki Politechniki Wrocławskiej. Stypendysta rządu francuskiego w Ecole Nationale Superieure des Telecommunications w Paryżu i doktorant Ecole Pratique des Hautes Etudes w Paryżu.'
+        'team.wielkopolan.bio4': 'Absolwent Ecole Superieure de Commerce et de Management (ESA3) w Paryżu (Francja). Absolwent wydziału Elektroniki Politechniki Wrocławskiej. Stypendysta rządu francuskiego w Ecole Nationale Superieure des Telecommunications w Paryżu i doktorant Ecole Pratique des Hautes Etudes w Paryżu.',
+
+        // ===== Kontakt =====
+        'contact.title': 'Kontakt',
+        'contact.addressValue': 'Grzybowska 87, 00-844 Warszawa',
+        'contact.form.title': 'Masz pytanie? Napisz do nas',
+        'contact.form.subtitle': 'Odpowiadamy na wszystkie zapytania osobiście – zwykle w ciągu 1 dnia roboczego.',
+        'contact.form.name': 'Imię i nazwisko',
+        'contact.form.email': 'Adres e-mail',
+        'contact.form.message': 'Wiadomość',
+        'contact.form.submit': 'Wyślij wiadomość',
+
+        // Footer
+        'footer.copyright': '© 2026 MMM Consulting. Wszystkie prawa zastrzeżone.'
     },
     en: {
         // Navigation
-        'nav.services': 'Our Services',
-        'nav.about': 'About Us',
-        'nav.team': 'Team',
-        'nav.contact': 'Address',
-        
-        // Hero Section
-        'hero.title': 'Profitable, Resilient and Sustainable Business',
-        'hero.tagline': 'A Comprehensive Approach to Sustainable Development',
-        'hero.subtitle': 'If you want to strengthen your company\'s competitive advantages to enable faster, more profitable growth aligned with sustainable transformation principles, focus on:',
-        
-        // Benefits (bullet points)
-        'benefits.1': 'strengthening stability and profitability through better control of energy, raw materials, and material costs, as well as effective climate and regulatory risk management;',
-        'benefits.2': 'building real competitive advantage in sales and tenders with key clients based on sustainable development standards;',
-        'benefits.3': 'unlocking access to grants, tax reliefs, and more favorable financing for development investments by meeting environmental criteria;',
-        'benefits.4': 'implementing a transparent, measurable, and auditable decarbonization plan and improving operational efficiency – both within the company and across the entire supply chain;',
-        'benefits.5': 'ensuring full compliance with regulatory and reporting requirements appropriate to the scale and profile of your business.',
-        
-        // Hero Description
-        'hero.desc1': 'These are the pillars on which we base our cooperation with clients, supporting them on their journey to sustainable and profitable growth.',
-        'hero.desc2': 'We help boards, owners, CFOs, and CSOs build a stable, profitable, and climate-resilient business. We design sustainability strategies, measurable carbon footprints (including product footprints), decarbonization pathways and plans, approaches to climate risks, and sustainability reports aligned with regulations and tailored to the company\'s profile.',
-        
-        // Services Section
-        'services.title': 'Our Services',
-        'services.scope': 'Within this service:',
-        'services.more': 'More',
-        'services.less': 'Less',
-        
-        // Service short names for compact grid
-        'service1.short': 'ESG Regulatory Gap Analysis',
-        'service2.short': 'Double Materiality Assessment',
-        'service3.short': 'Sustainability Strategy',
-        'service4.short': 'Carbon Footprint & LCA',
-        'service5.short': 'Decarbonization Plan',
-        'service6.short': 'Supplier Decarbonization',
-        'service7.short': 'EU Taxonomy',
-        'service8.short': 'Grants & Financing',
-        'service9.short': 'Sustainability Report',
-        'service10.short': 'Emissions Offsetting',
-        'service11.short': 'ESG Partner (subscription)',
-        'service12.short': 'Company Growth',
-        
-        // Service 1
-        'service1.title': 'ESG Regulatory Gap Analysis (CSRD, CSDDD, VSME, etc.)',
-        'service1.desc': 'We analyze your company\'s regulatory environment and transform the maze of regulations into a clear map of obligations, risks, and action priorities. The goal is clarity – what is necessary, what is profitable, and what is unnecessary.',
-        'service1.li1': 'we determine which sustainability regulations (CSRD/ESRS, CSDDD, VSME, EU Taxonomy, greenwashing regulations) actually apply to your company – now and in the coming years,',
-        'service1.li2': 'we diagnose the current level of organizational readiness: data, processes, policies, reporting, governance,',
-        'service1.li3': 'we identify key gaps and areas of elevated risk,',
-        'service1.li4': 'we prepare a concise report "where we are vs. where we should be",',
-        'service1.li5': 'we create a prioritized action plan for 6–24 months.',
-        
-        // Service 2
-        'service2.title': 'Double Materiality Assessment',
-        'service2.desc': 'We organize sustainability topics according to their significance for your company and its environment, so you can focus resources where the business and regulatory impact is greatest.',
-        'service2.li1': 'we design a double materiality analysis approach compliant with ESRS/VSME,',
-        'service2.li2': 'we conduct workshops with key stakeholders (management, finance, operations, HR, procurement, sales),',
-        'service2.li3': 'we collect and analyze data from internal surveys and interviews, and – where needed – external ones,',
-        'service2.li4': 'we assess the impact of individual sustainability topics on the company and the company\'s impact on its environment,',
-        'service2.li5': 'we develop a double materiality matrix and recommend sustainability priorities.',
-        
-        // Service 3
-        'service3.title': 'Sustainability Strategy Integrated with Business Strategy',
-        'service3.desc': 'We integrate sustainability strategy with business strategy so that it supports growth, profitability, operational efficiency, and risk management – instead of functioning alongside the current business.',
-        'service3.li1': 'we translate analysis results (regulatory gaps, topic materiality) into key strategic sustainability priorities,',
-        'service3.li2': 'we define goals, KPIs, and governance structure (roles, responsibilities, decision-making forums),',
-        'service3.li3': 'we design initiatives aimed at optimizing processes and the use of energy, raw materials, and natural resources,',
-        'service3.li4': 'we integrate sustainability goals and actions with growth, profitability, and risk management strategy – including climate risks,',
-        'service3.li5': 'we prepare a sustainability strategy document for internal and external use.',
-        
-        // Service 4
-        'service4.title': 'Carbon Footprint and Product Footprint (LCA / Product Carbon Footprint)',
-        'service4.desc': 'We deliver a credible, quantifiable picture of emissions – both at the organizational level and for key products. This is the foundation for decarbonization, reporting, and conversations with clients and banks.',
-        'service4.li1': 'we design the approach to carbon footprint calculation (scope 1/2/3),',
-        'service4.li2': 'we collect and verify the data necessary for calculations,',
-        'service4.li3': 'we calculate the organization\'s carbon footprint and – where appropriate – the product carbon footprint (LCA/PCF),',
-        'service4.li4': 'we identify the main emission sources and areas with the greatest reduction potential,',
-        'service4.li5': 'we prepare results in a format understandable to management, clients, banks, and auditors.',
-        
-        // Service 5
-        'service5.title': 'Decarbonization Pathways and Plan',
-        'service5.desc': 'We transform emissions data into an agreed, quantifiable, and business-justified reduction pathway that combines the perspectives of management, finance, and operations.',
-        'service5.li1': 'we develop decarbonization scenarios for agreed time horizons (e.g., 2030/2040/2050),',
-        'service5.li2': 'we analyze the impact of scenarios on emissions, CAPEX/OPEX, and key business areas,',
-        'service5.li3': 'we facilitate the process of selecting the target scenario with key decision-makers,',
-        'service5.li4': 'we prepare a detailed decarbonization plan: projects, timeline, responsibilities, KPIs,',
-        'service5.li5': 'we propose methods for monitoring progress and reporting.',
-        
-        // Service 6
-        'service6.title': 'Supplier Decarbonization Program ',
-        'service6.desc': 'We organize and develop the approach to emissions in the supply chain – where customer, corporate group, and regulatory requirements are increasingly focused.',
-        'service6.li1': 'we segment suppliers according to their emissions impact, scale of cooperation, and business significance,',
-        'service6.li2': 'we prepare supplier engagement tools (surveys, criteria, supplier code, contractual provisions),',
-        'service6.li3': 'we analyze data from suppliers and identify areas with the greatest reduction potential,',
-        'service6.li4': 'we co-create emissions reduction plans with key suppliers,',
-        'service6.li5': 'we design the process for monitoring progress and periodic reviews.',
-        
-        // Service 7
-        'service7.title': 'EU Taxonomy – Activity Qualification and Indicators',
-        'service7.desc': 'We provide a clear picture of what portion of your activities is "green" under the EU Taxonomy – which is increasingly important in discussions with banks, investors, and corporate groups.',
-        'service7.li1': 'we map company activities to EU Taxonomy categories,',
-        'service7.li2': 'we analyze compliance with "eligible" and "aligned" criteria for individual areas,',
-        'service7.li3': 'we calculate indicators for the share of revenues, CAPEX, and OPEX related to Taxonomy-covered activities,',
-        'service7.li4': 'we prepare materials presenting results for management, banks, investors, and corporate groups,',
-        'service7.li5': 'we identify directions for increasing the share of Taxonomy-aligned activities in subsequent years.',
-        
-        // Service 8
-        'service8.title': 'Grants and Green Investment Financing',
-        'service8.desc': 'We connect your company\'s environmental and climate projects with specific financing opportunities – grants and green and sustainability-linked banking products.',
-        'service8.li1': 'we analyze the portfolio of planned investments (renewable energy, energy efficiency, modernizations, new technologies),',
-        'service8.li2': 'we select appropriate national, EU programs, and banking solutions,',
-        'service8.li3': 'we prepare the substantive sustainability/climate section and indicators (including EU Taxonomy-related),',
-        'service8.li4': 'we support the creation of application documentation and responses to questions from financing institutions,',
-        'service8.li5': 'we help link investment projects with the adopted sustainability strategy and decarbonization plan.',
-        
-        // Service 9
-        'service9.title': 'Sustainability Report Tailored to Regulations and Business Needs',
-        'service9.desc': 'We design the report to simultaneously meet regulatory requirements and genuinely support management and communication with the market – internally and externally.',
-        'service9.li1': 'we select the appropriate report format (CSRD/ESRS or ESG/VSME, depending on company profile),',
-        'service9.li2': 'we design the report structure and set of indicators,',
-        'service9.li3': 'we organize the process of collecting and verifying data from different parts of the organization,',
-        'service9.li4': 'we prepare content proposals (descriptive and analytical sections) in cooperation with your team,',
-        'service9.li5': 'we advise on how to use the report in relations with management, banks, investors, clients, and employees.',
-        
-        // Service 10
-        'service10.title': 'Responsible Emissions Offsetting',
-        'service10.desc': 'We organize the approach to emissions compensation so that it complements reduction efforts and strengthens the company\'s climate credibility, rather than creating greenwashing risks.',
-        'service10.li1': 'we define the role of offsetting in your company\'s climate strategy (scope, sequence relative to reduction actions, time horizon),',
-        'service10.li2': 'we define criteria for selecting offset projects (standards, additionality, permanence, risk),',
-        'service10.li3': 'we recommend a portfolio of offset projects and their documentation methods,',
-        'service10.li4': 'we prepare principles for reporting and communication regarding emissions compensation,',
-        'service10.li5': 'we link the offsetting approach with the broader sustainability and decarbonization strategy.',
-        
-        // Service 11
-        'service11.title': 'Sustainability Partner – Ongoing ESG Support (Subscription)',
-        'service11.desc': 'We provide ongoing, flexible ESG support for companies that want to keep the topic under control without building extensive internal structures.',
-        'service11.li1': 'we prepare periodic (e.g., quarterly) summaries of key ESG regulatory and market changes with action recommendations,',
-        'service11.li2': 'we maintain a basic set of sustainability indicators under control with you,',
-        'service11.li3': 'we provide a pool of consulting hours for ongoing needs (client surveys, bank inquiries, materials for management and committees),',
-        'service11.li4': 'we participate in selected internal meetings as an external ESG partner,',
-        'service11.li5': 'we adjust the scope of cooperation to the size, industry, and maturity of your organization in sustainability.',
-        
-        // Service 12
-        'service12.title': 'Help with Your Company\'s Growth',
-        'service12.desc': 'We prepare a development plan or audit an existing one. We determine which activities are most important for the company and how they are internally linked and dependent.',
-        'service12.li1': 'we review and improve activities leading to goal achievement and propose limiting/eliminating valueless activities,',
-        'service12.li2': 'we improve areas of Sales, Marketing, R&D, Supply Chain, Production, Human Capital, Finance, and Controlling,',
-        'service12.li3': 'we help develop/implement risk management and internal audit,',
-        'service12.li4': 'we focus on developing communication and organizational culture,',
-        'service12.li5': 'we create an action plan leading to effective company sale or develop a phased succession plan.',
-        
-        // About Section
-        'about.title': 'About Us',
-        'about.p1': 'We are both business practitioners and consultants with many years of experience. We combine real experience in running and managing companies in Poland and abroad with a consulting perspective, which allows us to design solutions that can be implemented in practice, not just described in a presentation.',
-        'about.p2': 'On a daily basis, we work with regulators at the European Union level (including institutions responsible for non-financial reporting regulations and standards), sector organizations, European banks, and consulting firms. This allows us to understand how ESG regulatory requirements translate into market expectations and corporate financing criteria.',
-        'about.p3': 'We base our offering on experience in managing manufacturing, trading, and service companies. We speak in simple and concrete language – without corporate jargon – focusing on practical understanding of ESG transformation challenges, finding solutions, and effectively implementing them.',
-        'about.p4': 'We believe that being right is not about being right at the beginning of the journey, but about being able to translate it into concrete actions and results. We measure the effectiveness of implemented actions primarily by financial results and greater business resilience, not by the number of slides and reports.',
-        'about.p5': 'We help connect ESG topics with the strategy and long-term goals of companies seeking the best development paths in a dynamically changing regulatory and market environment. Our experience shows that companies that have integrated ESG with strategic and operational business management build lasting competitive advantage.',
-        
-        // Capabilities Section
-        'capabilities.title': 'Our Capabilities',
-        'capabilities.revenue': 'Client Revenue',
-        'capabilities.revenue.sub': 'per year',
-        'capabilities.projects': 'ESG Projects',
-        'capabilities.implementations': 'Implementations',
-        'capabilities.industries': 'Industries',
-        
-        // Contact Section
-        'contact.title': 'Address',
-        'contact.address': 'Address',
-        'contact.addressValue': 'Grzybowska 87, 00-844 Warsaw',
-        
-        // Footer
-        'footer.copyright': '© 2025 MMM Consulting. All rights reserved.',
-        
-        // Team Section
+        'nav.outsourced': 'Outsourced ESG',
+        'nav.raport': 'ESG Report',
+        'nav.redukcja': 'Cost & Emission Reduction',
+        'nav.rentownosc': 'Greater Profitability',
+        'nav.dlaczegomy': 'Why Us',
+        'nav.kontakt': 'Contact',
+
+        // ===== Home =====
+        'home.tagline': 'We turn ESG requirements into measurable savings, higher sales, and competitive advantage.',
+        'home.subtitle': 'ESG outsourcing, CSRD reporting, and cost reduction for manufacturing and FMCG companies.',
+        'home.hint': 'Choose the area you are interested in',
+        'home.card.outsourced.desc': 'Full outsourcing of the ESG department in a subscription model.',
+        'home.card.raport.desc': 'Sustainability reports compliant with CSRD and ESRS.',
+        'home.card.redukcja.desc': 'Reducing energy, material, packaging, and emission costs.',
+        'home.card.rentownosc.desc': 'Higher EBITDA by using ESG as a competitive advantage.',
+        'home.card.dlaczegomy.desc': 'Meet the team and the MMM Consulting approach.',
+        'home.card.kontakt.desc': 'Get in touch and ask us a question.',
+
+        // ===== Outsourced ESG =====
+        'outsourced.q1': "Don't want to hire a full-time ESG Manager for 25–30k PLN a month?",
+        'outsourced.q2': 'Need to meet the requirements of clients or investors?',
+        'outsourced.statement': 'The solution can be ongoing support in a subscription model.',
+        'outsourced.listTitle': 'We offer full outsourcing of the ESG department:',
+        'outsourced.item.1': 'preparing ESG reports',
+        'outsourced.item.2': 'running the CSRD project',
+        'outsourced.item.3': 'collecting data from facilities',
+        'outsourced.item.4': 'communication with suppliers',
+        'outsourced.item.5': 'calculating the carbon footprint',
+        'outsourced.item.6': 'managing the EcoVadis platform',
+        'outsourced.item.7': 'preparation for SBTi',
+        'outsourced.item.8': 'running ESG KPIs',
+        'outsourced.item.9': 'preparing materials for the board',
+        'outsourced.item.10': 'contact with the auditor',
+
+        // ===== Raport ESG =====
+        'raport.title': 'Sustainability Report (ESG/CSRD) – the fundamentals, if you are subject to non-financial reporting obligations.',
+        'raport.intro': 'MMM Consulting supports companies in preparing sustainability reports compliant with CSRD and ESRS requirements, as well as the expectations of clients, financial institutions, and business partners. Our goal is not merely to prepare a report, but to create a document that supports business growth, builds credibility, and facilitates winning new contracts.',
+
+        'raport.scope.sectionTitle': 'Scope of Service',
+        'raport.scope.hint': 'Click a card to see the details',
+
+        'raportscope.1.short': 'Double Materiality Assessment',
+        'raportscope.1.title': 'Double Materiality Assessment',
+        'raportscope.1.li.1': 'identification of key impacts, risks, and opportunities related to sustainability',
+        'raportscope.1.li.2': 'stakeholder mapping',
+        'raportscope.1.li.3': 'workshops with management',
+        'raportscope.1.li.4': 'determining topics subject to reporting',
+
+        'raportscope.2.short': 'Gap Analysis',
+        'raportscope.2.title': 'Gap Analysis',
+        'raportscope.2.li.1': 'assessment of the organization\'s reporting readiness',
+        'raportscope.2.li.2': 'identification of missing data, procedures, and policies',
+        'raportscope.2.li.3': 'a plan of remedial actions',
+
+        'raportscope.3.short': 'ESG Data Collection',
+        'raportscope.3.title': 'Collection and Verification of ESG Data',
+        'raportscope.3.li.1': 'environmental data (emissions, energy, waste, water)',
+        'raportscope.3.li.2': 'social data (employees, health & safety, diversity)',
+        'raportscope.3.li.3': 'governance data',
+        'raportscope.3.li.4': 'support in organizing reporting processes',
+
+        'raportscope.4.short': 'ESG Indicator Calculation',
+        'raportscope.4.title': 'Calculation of ESG Indicators',
+        'raportscope.4.li.1': 'greenhouse gas emissions Scope 1, 2, and 3',
+        'raportscope.4.li.2': 'energy consumption and energy intensity',
+        'raportscope.4.li.3': 'employee indicators',
+        'raportscope.4.li.4': 'indicators required by ESRS',
+
+        'raportscope.5.short': 'Report Content Development',
+        'raportscope.5.title': 'Development of Report Content',
+        'raportscope.5.li.1': 'preparation of the business narrative',
+        'raportscope.5.li.2': 'description of strategy and business model',
+        'raportscope.5.li.3': 'presentation of goals, actions, and results',
+        'raportscope.5.li.4': 'development of required disclosures compliant with ESRS',
+
+        'raportscope.6.short': 'Design & Publication',
+        'raportscope.6.title': 'Graphic Design and Publication',
+        'raportscope.6.li.1': 'professional development of the report',
+        'raportscope.6.li.2': 'PDF and online versions',
+        'raportscope.6.li.3': 'infographics and data visualization',
+        'raportscope.6.li.4': 'preparation of materials for clients, investors, and banks',
+
+        'raportscope.7.short': 'Assurance Preparation',
+        'raportscope.7.title': 'Preparation for Assurance',
+        'raportscope.7.li.1': 'support during the auditor\'s verification process',
+        'raportscope.7.li.2': 'organizing source documentation',
+        'raportscope.7.li.3': 'closing audit remarks',
+
+        'raport.elements.sectionTitle': 'Key Elements of the Report',
+        'raport.elements.subtitle': 'The report includes, among others:',
+
+        'raportcat.profil.title': 'Organization Profile',
+        'raportcat.profil.li.1': 'business model',
+        'raportcat.profil.li.2': 'group structure',
+        'raportcat.profil.li.3': 'markets of operation',
+        'raportcat.profil.li.4': 'development strategy',
+
+        'raportcat.strategia.title': 'Sustainability Strategy',
+        'raportcat.strategia.li.1': 'ESG goals',
+        'raportcat.strategia.li.2': 'link to business objectives',
+        'raportcat.strategia.li.3': 'management of risks and opportunities',
+
+        'raportcat.envE.title': 'Environmental (E)',
+        'raportcat.envE.li.1': 'carbon footprint Scope 1, 2, and 3',
+        'raportcat.envE.li.2': 'energy consumption',
+        'raportcat.envE.li.3': 'energy efficiency',
+        'raportcat.envE.li.4': 'waste management',
+        'raportcat.envE.li.5': 'water consumption',
+        'raportcat.envE.li.6': 'packaging and circular economy',
+        'raportcat.envE.li.7': 'emission reduction actions',
+
+        'raportcat.socialS.title': 'Social (S)',
+        'raportcat.socialS.li.1': 'employment',
+        'raportcat.socialS.li.2': 'workplace safety',
+        'raportcat.socialS.li.3': 'employee training and development',
+        'raportcat.socialS.li.4': 'diversity and inclusion',
+        'raportcat.socialS.li.5': 'human rights',
+        'raportcat.socialS.li.6': 'relations with local communities',
+
+        'raportcat.governanceG.title': 'Governance (G)',
+        'raportcat.governanceG.li.1': 'management structure',
+        'raportcat.governanceG.li.2': 'ethics and compliance',
+        'raportcat.governanceG.li.3': 'anti-corruption measures',
+        'raportcat.governanceG.li.4': 'risk management system',
+        'raportcat.governanceG.li.5': 'oversight of ESG matters',
+
+        'raportcat.risks.title': 'Risks and Opportunities',
+        'raportcat.risks.li.1': 'regulatory impact (CSRD, CSDDD, PPWR, EUDR)',
+        'raportcat.risks.li.2': 'climate risks',
+        'raportcat.risks.li.3': 'supply chain risks',
+        'raportcat.risks.li.4': 'opportunities related to new products and markets',
+
+        'raportcat.kpi.title': 'Goals and KPIs',
+        'raportcat.kpi.li.1': 'emission reduction targets',
+        'raportcat.kpi.li.2': 'energy targets',
+        'raportcat.kpi.li.3': 'ESG performance indicators',
+        'raportcat.kpi.li.4': 'progress monitoring',
+
+        'raport.client.sectionTitle': 'What the Client Receives',
+        'raport.client.item.1': 'A Sustainability Report compliant with CSRD/ESRS',
+        'raport.client.item.2': 'Double materiality assessment',
+        'raport.client.item.3': 'Scope 1–3 carbon footprint calculation',
+        'raport.client.item.4': 'ESG risk and opportunity matrix',
+        'raport.client.item.5': 'A set of ESG policies and procedures',
+        'raport.client.item.6': 'ESG KPI dashboard for management',
+        'raport.client.item.7': 'A package of communication materials for clients, banks, and investors',
+        'raport.client.item.8': 'A 3–5 year ESG action roadmap',
+
+        'raport.benefits.sectionTitle': 'Business Benefits',
+        'raport.benefits.item.1': 'Meeting regulatory requirements',
+        'raport.benefits.item.2': 'Greater credibility with clients, banks, and investors',
+        'raport.benefits.item.3': 'Better position in tenders and procurement processes of large corporate groups',
+        'raport.benefits.item.4': 'Identifying opportunities to reduce energy, material, and packaging costs',
+        'raport.benefits.item.5': 'Preparing the organization for clients\' ESG requirements',
+        'raport.benefits.item.6': 'Supporting revenue growth by using sustainability as a competitive advantage',
+
+        // ===== Redukcja kosztów i emisji =====
+        'reduction.title': 'We turn ESG requirements into savings and competitive advantage.',
+        'reduction.pillarLabel.1': 'Pillar 1',
+        'reduction.pillarLabel.2': 'Pillar 2',
+        'reduction.pillarLabel.3': 'Pillar 3',
+        'reduction.pillarLabel.4': 'Pillar 4',
+        'reduction.pillar.1.name': 'Carbon',
+        'reduction.pillar.1.desc': 'Scope 1, 2, 3 - product footprint',
+        'reduction.pillar.2.name': 'Energy',
+        'reduction.pillar.2.desc': 'energy monitoring - loss identification - cost reduction',
+        'reduction.pillar.3.name': 'Packaging',
+        'reduction.pillar.3.desc': 'packaging data - PPWR - material optimization',
+        'reduction.pillar.4.name': 'Reduction',
+        'reduction.pillar.4.desc': 'emission reduction plan - KPIs - implementation and monitoring',
+
+        // ===== Większa rentowność =====
+        'profit.title': 'We increase EBITDA by lowering costs and increasing revenue.',
+        'profit.hint': 'Click a product to see the details',
+
+        'profitproduct.1.short': 'Greenwashing Protection',
+        'profitproduct.1.title': 'Protection Against Greenwashing Risk (Green Claims Shield)',
+        'profitproduct.1.scopeTitle': 'Scope:',
+        'profitproduct.1.scope.1': 'review of marketing communications',
+        'profitproduct.1.scope.2': 'analysis of environmental claims',
+        'profitproduct.1.scope.3': 'assessment of compliance with EU requirements',
+        'profitproduct.1.scope.4': 'identification of greenwashing risks',
+        'profitproduct.1.scope.5': 'recommendations for changes',
+        'profitproduct.1.resultTitle': 'Result:',
+        'profitproduct.1.result.1': 'safe marketing communication',
+        'profitproduct.1.result.2': 'reduced risk of penalties and disputes',
+
+        'profitproduct.2.short': 'SBTi & EcoVadis',
+        'profitproduct.2.title': 'A Pass to Clients Requiring SBTi and EcoVadis (ESG Market Access)',
+        'profitproduct.2.scopeTitle': 'Scope:',
+        'profitproduct.2.scope.1': 'Scope 1–3 carbon footprint',
+        'profitproduct.2.scope.2': 'preparation for SBTi',
+        'profitproduct.2.scope.3': 'preparation for EcoVadis',
+        'profitproduct.2.scope.4': 'ESG policies',
+        'profitproduct.2.scope.5': 'support for procurement and sales departments',
+        'profitproduct.2.resultTitle': 'Result:',
+        'profitproduct.2.result.1': 'readiness for corporate client requirements',
+        'profitproduct.2.result.2': 'greater chance of entering global supply chains',
+        'profitproduct.2.result.3': 'improved position in tenders',
+
+        'profitproduct.3.short': 'PPWR – Packaging',
+        'profitproduct.3.title': 'Preparing the Company for New EU Packaging Requirements (PPWR READY)',
+        'profitproduct.3.scopeTitle': 'Scope:',
+        'profitproduct.3.scope.1': 'analysis of PPWR\'s impact on the company',
+        'profitproduct.3.scope.2': 'packaging portfolio audit',
+        'profitproduct.3.scope.3': 'assessment of current packaging compliance',
+        'profitproduct.3.scope.4': 'analysis of recyclability levels',
+        'profitproduct.3.scope.5': 'identification of regulatory risks',
+        'profitproduct.3.scope.6': 'PPWR adaptation roadmap',
+        'profitproduct.3.scope.7': 'support in cooperation with packaging suppliers',
+        'profitproduct.3.resultTitle': 'Result:',
+        'profitproduct.3.result.1': 'compliance gap map',
+        'profitproduct.3.result.2': 'a list of actions to implement',
+        'profitproduct.3.result.3': 'an adaptation timeline',
+        'profitproduct.3.result.4': 'reduced risk of sanctions and client loss',
+
+        'profitproduct.4.short': 'EUDR – Supply Chain',
+        'profitproduct.4.title': 'A Supply Chain Free of Deforestation Risk (EUDR)',
+        'profitproduct.4.scopeTitle': 'Scope:',
+        'profitproduct.4.scope.1': 'identification of products covered by EUDR',
+        'profitproduct.4.scope.2': 'supplier mapping',
+        'profitproduct.4.scope.3': 'geographic risk analysis',
+        'profitproduct.4.scope.4': 'assessment of supplier readiness',
+        'profitproduct.4.scope.5': 'preparation of due diligence procedures',
+        'profitproduct.4.scope.6': 'support in collecting geolocation data',
+        'profitproduct.4.resultTitle': 'Result:',
+        'profitproduct.4.result.1': 'EUDR risk map',
+        'profitproduct.4.result.2': 'compliance procedures',
+        'profitproduct.4.result.3': 'an action plan for suppliers',
+
+        'profitproduct.5.short': 'Green Savings',
+        'profitproduct.5.title': 'Green Savings – a Cost and Emission Reduction Program',
+        'profitproduct.5.intro.1': 'We lower operating costs through decarbonization and efficiency improvements.',
+        'profitproduct.5.intro.2': 'We help companies turn sustainability from a regulatory obligation into a real source of savings and greater profitability.',
+        'profitproduct.5.intro.3': 'Within 6–8 weeks, we identify actions that reduce the cost of energy, raw materials, packaging, transport, and procurement, while reducing the company\'s environmental footprint.',
+        'profitproduct.5.challengesTitle': 'Typical challenges our clients face:',
+        'profitproduct.5.challenges.1': 'rising costs of energy, production, and logistics',
+        'profitproduct.5.challenges.2': 'margin pressure from rising raw material prices',
+        'profitproduct.5.challenges.3': 'ESG seen as a cost rather than a tool for increasing efficiency',
+        'profitproduct.5.challenges.4': 'lack of data showing the link between emissions and operating costs',
+        'profitproduct.5.challenges.5': 'inefficient packaging and supply chain structure',
+        'profitproduct.5.challenges.6': 'growing client requirements regarding decarbonization and reporting',
+        'profitproduct.5.howTitle': 'How we help:',
+        'profitproduct.5.howIntro': 'We carry out a comprehensive analysis of operational processes and the supply chain to identify actions that deliver the fastest and greatest financial effect.',
+        'profitproduct.5.scopeTitle': 'The scope of the project includes:',
+        'profitproduct.5.scope.1': 'analysis of costs and emissions across the entire value chain',
+        'profitproduct.5.scope.2': 'identification of quick savings that can be implemented within a few weeks',
+        'profitproduct.5.scope.3': 'supplier base optimization in terms of cost, distance, and ESG performance',
+        'profitproduct.5.scope.4': 'packaging optimization through material reduction, raw material changes, and improved logistics efficiency',
+        'profitproduct.5.scope.5': 'transport and logistics optimization',
+        'profitproduct.5.scope.6': 'identification of opportunities to improve energy efficiency and resource use',
+        'profitproduct.5.scope.7': 'prioritization of initiatives by savings potential, ROI, and ease of implementation',
+        'profitproduct.5.resultsTitle': 'Project results:',
+        'profitproduct.5.results.1': 'a map of cost reduction opportunities across short, medium, and long horizons',
+        'profitproduct.5.results.2': 'identification of savings at the product, process, and plant level',
+        'profitproduct.5.results.3': 'an estimated value of possible savings (PLN and margin impact)',
+        'profitproduct.5.results.4': 'a list of Quick Win actions to implement within 0–3 months',
+        'profitproduct.5.results.5': 'a plan of medium-term initiatives (3–12 months)',
+        'profitproduct.5.results.6': 'recommendations to increase operational and environmental efficiency',
+        'profitproduct.5.results.7': 'an implementation plan with assigned responsibilities, a timeline, and KPIs',
+
+        'profitproduct.6.short': 'Higher Sales',
+        'profitproduct.6.title': 'Higher Sales',
+        'profitproduct.6.intro.1': 'We increase sales and margins by using sustainability as a competitive advantage.',
+        'profitproduct.6.intro.2': 'We help FMCG manufacturers increase the value of their products, improve margins, and win new clients by making better use of environmental and social aspects in their offering, communication, and sales strategy.',
+        'profitproduct.6.intro.3': 'Within 6–8 weeks, we identify opportunities to grow sales, improve product positioning, and build a competitive advantage without the need for costly investments.',
+        'profitproduct.6.challengesTitle': 'Typical challenges our clients face:',
+        'profitproduct.6.challenges.1': 'limited ability to raise prices without losing sales',
+        'profitproduct.6.challenges.2': 'strong price pressure from retail chains and private labels',
+        'profitproduct.6.challenges.3': 'ESG seen purely as a cost and regulatory obligation',
+        'profitproduct.6.challenges.4': 'untapped product potential in marketing communication',
+        'profitproduct.6.challenges.5': 'difficulty differentiating the offer from competitors',
+        'profitproduct.6.howTitle': 'How we help:',
+        'profitproduct.6.howIntro': 'We analyze the product portfolio, pricing strategy, and market communication to identify areas where sustainability actions can directly translate into higher sales and improved profitability.',
+        'profitproduct.6.scopeTitle': 'The scope of the project includes:',
+        'profitproduct.6.scope.1': 'analysis of the profitability and sales potential of the entire product portfolio',
+        'profitproduct.6.scope.2': 'identification of products that can gain a competitive advantage through better use of ESG aspects',
+        'profitproduct.6.scope.3': 'recommendations on product positioning and marketing communication',
+        'profitproduct.6.scope.4': 'optimization of pricing and promotional strategy',
+        'profitproduct.6.scope.5': 'support in preparing sales arguments for retail chains and key clients',
+        'profitproduct.6.scope.6': 'identification of opportunities to increase sales by meeting clients\' sustainability requirements',
+        'profitproduct.6.resultsTitle': 'Project results:',
+        'profitproduct.6.results.1': 'a sales development plan for individual product groups',
+        'profitproduct.6.results.2': 'recommendations on pricing policy and positioning',
+        'profitproduct.6.results.3': 'a map of opportunities to increase revenue through sustainability',
+        'profitproduct.6.results.4': 'a set of recommendations on marketing communication, packaging, and product messaging',
+        'profitproduct.6.results.5': 'argumentation supporting negotiations with retail chains and B2B customers',
+        'profitproduct.6.results.6': 'an implementation plan with a timeline, responsibilities, and KPIs',
+
+        // ===== Dlaczego my =====
+        'why.title': 'The priority is a better financial result. We turn trends and legislative requirements into more sales and lower costs, here and now.',
+        'why.p2': 'The most effective companies do not treat sustainability as a matter of regulatory compliance, but as a growth tool. Reducing energy and material costs, optimizing the supply chain, gaining access to new clients, and gaining an advantage in tenders and negotiations with business partners – these are real business benefits. At MMM Consulting, we help identify and realize these opportunities, turning ESG requirements into measurable savings and additional revenue.',
+
         'team.title': 'Our Team',
         'team.czarnecki.bio': 'Expert in management and development of FMCG Food companies in Poland and Europe: long-time CEO, General Manager and Supervisory Board Member of Raisio Polska, Danone, Bongrain (Savencia Group), Rigas Piensaimnieks (Riga, Latvia), Delicpol Group, Bakalland SA, Bielenda SA, Sonko / Oshee Group, co-founder of PROTEINrise foodtech startup and MMM Consulting connecting corporate strategies with ESG topics.',
         'team.czarnecki.bio2': 'Mentor in Mentors4Starters and Challenge Lab programs, member of the Expert Council for Business Law at KUL. Areas of specialization include sales and marketing, innovation, process and change management.',
@@ -372,86 +623,280 @@ const translations = {
         'team.wielkopolan.bio': 'Business practitioner with 30 years of experience. General Manager / CEO of companies in the broadly defined marketing industry in Polish and international ventures.',
         'team.wielkopolan.bio2': 'Management expert with multicultural experience encompassing company and operations management, as well as sales and marketing. Strong leader with great strategic planning skills, experienced in successful implementation of action plans and achieving excellent results. Consultant and Interim Manager.',
         'team.wielkopolan.bio3': 'Advised many companies from their inception to full development. Founded over a dozen companies and successfully developed them in subsequent years. Completed several hundred projects, international and local. Introduced paid television Canal+ to the Polish market, where he served as Managing Director of one of the Canal+ Polska group companies. Long-time President of the Polish Marketing Association SMB.',
-        'team.wielkopolan.bio4': 'Graduate of Ecole Superieure de Commerce et de Management (ESA3) in Paris (France). Graduate of the Faculty of Electronics at Wrocław University of Technology. French government scholarship holder at Ecole Nationale Superieure des Telecommunications in Paris and doctoral student at Ecole Pratique des Hautes Etudes in Paris.'
+        'team.wielkopolan.bio4': 'Graduate of Ecole Superieure de Commerce et de Management (ESA3) in Paris (France). Graduate of the Faculty of Electronics at Wrocław University of Technology. French government scholarship holder at Ecole Nationale Superieure des Telecommunications in Paris and doctoral student at Ecole Pratique des Hautes Etudes in Paris.',
+
+        // ===== Kontakt =====
+        'contact.title': 'Contact',
+        'contact.addressValue': 'Grzybowska 87, 00-844 Warsaw',
+        'contact.form.title': 'Have a question? Get in touch',
+        'contact.form.subtitle': 'We answer every inquiry personally – usually within 1 business day.',
+        'contact.form.name': 'Full name',
+        'contact.form.email': 'Email address',
+        'contact.form.message': 'Message',
+        'contact.form.submit': 'Send message',
+
+        // Footer
+        'footer.copyright': '© 2026 MMM Consulting. All rights reserved.'
     }
 };
 
 // Current language
 let currentLang = localStorage.getItem('language') || 'pl';
 
+// Track dynamically-rendered panel state so we can re-render on language switch
+const dynamicPanelState = {
+    raportScope: null,
+    profitProduct: null,
+    raportCategory: 'profil'
+};
+
 // Function to update page language
 function updateLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('language', lang);
-    
-    // Update HTML lang attribute
+
     document.documentElement.lang = lang;
-    
-    // Update page title
-    document.title = lang === 'pl' ? 'MMM Consulting' : 'MMM Consulting';
-    
-    // Update all elements with data-i18n attribute
+
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
             element.textContent = translations[lang][key];
         }
     });
-    
-    // Update expand/collapse buttons based on their state
-    document.querySelectorAll('.service-expand-btn').forEach(btn => {
-        if (btn.classList.contains('active')) {
-            btn.textContent = translations[lang]['services.less'];
-        } else {
-            btn.textContent = translations[lang]['services.more'];
-        }
-    });
-    
-    // Update language toggle buttons
+
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
+
+    refreshDynamicContent();
 }
 
-// Mobile Navigation Toggle
-document.addEventListener('DOMContentLoaded', function() {
+function t(key) {
+    return (translations[currentLang] && translations[currentLang][key]) || key;
+}
+
+function refreshDynamicContent() {
+    if (dynamicPanelState.raportScope) {
+        renderRaportScopeDetail(dynamicPanelState.raportScope);
+    }
+    if (dynamicPanelState.profitProduct) {
+        renderProfitProductDetail(dynamicPanelState.profitProduct);
+    }
+    renderRaportCategory(dynamicPanelState.raportCategory);
+}
+
+// ===== Raport ESG: "Zakres usługi" expandable grid =====
+const raportScopeCounts = { 1: 4, 2: 3, 3: 4, 4: 4, 5: 4, 6: 4, 7: 3 };
+
+function renderRaportScopeDetail(key) {
+    const content = document.getElementById('raportScopeContent');
+    if (!content) return;
+    const count = raportScopeCounts[key];
+    let items = '';
+    for (let i = 1; i <= count; i++) {
+        items += `<li>${t(`raportscope.${key}.li.${i}`)}</li>`;
+    }
+    content.innerHTML = `
+        <h3>${t(`raportscope.${key}.title`)}</h3>
+        <ul>${items}</ul>
+    `;
+}
+
+// ===== Raport ESG: "Kluczowe elementy raportu" tab switcher =====
+const raportCategoryCounts = {
+    profil: 4, strategia: 3, envE: 7, socialS: 6, governanceG: 5, risks: 4, kpi: 4
+};
+
+function renderRaportCategory(cat) {
+    const content = document.getElementById('raportCatContent');
+    if (!content) return;
+    const count = raportCategoryCounts[cat];
+    let items = '';
+    for (let i = 1; i <= count; i++) {
+        items += `<li>${t(`raportcat.${cat}.li.${i}`)}</li>`;
+    }
+    content.innerHTML = `<ul class="raport-cat-list">${items}</ul>`;
+
+    document.querySelectorAll('.raport-cat-tab').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-cat') === cat);
+    });
+}
+
+// ===== Większa rentowność: product expandable grid =====
+const profitScopeResultCounts = {
+    1: { scope: 5, result: 2 },
+    2: { scope: 5, result: 3 },
+    3: { scope: 7, result: 4 },
+    4: { scope: 6, result: 3 }
+};
+
+function renderProfitProductDetail(key) {
+    const content = document.getElementById('profitContent');
+    if (!content) return;
+
+    if (key === '5' || key === '6') {
+        const challengeCount = key === '5' ? 6 : 5;
+        const scopeCount = key === '5' ? 7 : 6;
+        const resultCount = key === '5' ? 7 : 6;
+
+        let challenges = '';
+        for (let i = 1; i <= challengeCount; i++) {
+            challenges += `<li>${t(`profitproduct.${key}.challenges.${i}`)}</li>`;
+        }
+        let scope = '';
+        for (let i = 1; i <= scopeCount; i++) {
+            scope += `<li>${t(`profitproduct.${key}.scope.${i}`)}</li>`;
+        }
+        let results = '';
+        for (let i = 1; i <= resultCount; i++) {
+            results += `<li>${t(`profitproduct.${key}.results.${i}`)}</li>`;
+        }
+
+        content.innerHTML = `
+            <h3>${t(`profitproduct.${key}.title`)}</h3>
+            <p>${t(`profitproduct.${key}.intro.1`)}</p>
+            <p>${t(`profitproduct.${key}.intro.2`)}</p>
+            <p>${t(`profitproduct.${key}.intro.3`)}</p>
+            <p><strong>${t(`profitproduct.${key}.challengesTitle`)}</strong></p>
+            <ul>${challenges}</ul>
+            <p><strong>${t(`profitproduct.${key}.howTitle`)}</strong></p>
+            <p>${t(`profitproduct.${key}.howIntro`)}</p>
+            <p><strong>${t(`profitproduct.${key}.scopeTitle`)}</strong></p>
+            <ul>${scope}</ul>
+            <p><strong>${t(`profitproduct.${key}.resultsTitle`)}</strong></p>
+            <ul>${results}</ul>
+        `;
+    } else {
+        const counts = profitScopeResultCounts[key];
+        let scope = '';
+        for (let i = 1; i <= counts.scope; i++) {
+            scope += `<li>${t(`profitproduct.${key}.scope.${i}`)}</li>`;
+        }
+        let result = '';
+        for (let i = 1; i <= counts.result; i++) {
+            result += `<li>${t(`profitproduct.${key}.result.${i}`)}</li>`;
+        }
+        content.innerHTML = `
+            <h3>${t(`profitproduct.${key}.title`)}</h3>
+            <p><strong>${t(`profitproduct.${key}.scopeTitle`)}</strong></p>
+            <ul>${scope}</ul>
+            <p><strong>${t(`profitproduct.${key}.resultTitle`)}</strong></p>
+            <ul>${result}</ul>
+        `;
+    }
+}
+
+// Generic expandable grid wiring (cards -> detail panel)
+function initExpandGrid(gridId, panelId, closeSelector, renderFn, stateKey) {
+    const grid = document.getElementById(gridId);
+    const panel = document.getElementById(panelId);
+    if (!grid || !panel) return;
+
+    const cards = grid.querySelectorAll('.service-card-compact');
+    const closeBtn = panel.querySelector(closeSelector);
+
+    cards.forEach(card => {
+        card.addEventListener('click', function () {
+            const key = this.getAttribute('data-key');
+            renderFn(key);
+            dynamicPanelState[stateKey] = key;
+
+            cards.forEach(c => c.classList.remove('active'));
+            this.classList.add('active');
+            panel.classList.add('active');
+
+            setTimeout(() => {
+                panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        });
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+            panel.classList.remove('active');
+            cards.forEach(c => c.classList.remove('active'));
+            dynamicPanelState[stateKey] = null;
+        });
+    }
+}
+
+// ===== Home hero: rising light particles =====
+function initHeroParticles() {
+    const container = document.querySelector('.home-particles');
+    if (!container) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) return;
+
+    const count = 42;
+    for (let i = 0; i < count; i++) {
+        const particle = document.createElement('span');
+        particle.className = 'particle' + (Math.random() < 0.35 ? ' particle-alt' : '');
+
+        const size = (Math.random() * 5 + 3).toFixed(1);
+        const left = (Math.random() * 100).toFixed(1);
+        const duration = (Math.random() * 10 + 14).toFixed(1);
+        const delay = (-Math.random() * duration).toFixed(1);
+        const drift = (Math.random() * 60 - 30).toFixed(0);
+        const peakOpacity = (Math.random() * 0.35 + 0.35).toFixed(2);
+
+        particle.style.setProperty('--size', `${size}px`);
+        particle.style.setProperty('--left', `${left}%`);
+        particle.style.setProperty('--duration', `${duration}s`);
+        particle.style.setProperty('--delay', `${delay}s`);
+        particle.style.setProperty('--drift', `${drift}px`);
+        particle.style.setProperty('--peak-opacity', peakOpacity);
+
+        container.appendChild(particle);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Mobile Navigation Toggle (navbar is only present on non-home pages)
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
-    
-    // Toggle mobile menu
-    navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
-    });
-    
-    // Close menu when clicking a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            document.body.style.overflow = '';
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
         });
-    });
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
-            navMenu.classList.remove('active');
-            document.body.style.overflow = '';
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
+    // Highlight the current page in the navbar
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
         }
     });
-    
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
                 const navHeight = document.querySelector('.navbar').offsetHeight;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -459,371 +904,82 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     // Navbar background change on scroll
     const navbar = document.querySelector('.navbar');
-    
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
-        } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-        }
-    });
-    
-    // Services Carousel (legacy - kept for compatibility if carousel elements exist)
-    const track = document.querySelector('.services-track');
-    const cards = document.querySelectorAll('.service-card');
-    const leftArrow = document.querySelector('.carousel-arrow-left');
-    const rightArrow = document.querySelector('.carousel-arrow-right');
-    const dotsContainer = document.querySelector('.carousel-dots');
-    
-    // Only initialize carousel if elements exist
-    if (track && cards.length > 0 && leftArrow && rightArrow && dotsContainer) {
-        let currentIndex = 0;
-        let cardsPerView = getCardsPerView();
-        let totalPages = Math.ceil(cards.length / cardsPerView);
-        
-        function getCardsPerView() {
-            if (window.innerWidth <= 768) return 1;
-            return 2;
-        }
-        
-        function createDots() {
-            dotsContainer.innerHTML = '';
-            for (let i = 0; i < totalPages; i++) {
-                const dot = document.createElement('button');
-                dot.classList.add('carousel-dot');
-                if (i === 0) dot.classList.add('active');
-                dot.addEventListener('click', () => goToPage(i));
-                dotsContainer.appendChild(dot);
-            }
-        }
-        
-        function updateDots() {
-            const dots = document.querySelectorAll('.carousel-dot');
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
-            });
-        }
-        
-        function updateArrows() {
-            leftArrow.disabled = currentIndex === 0;
-            rightArrow.disabled = currentIndex >= totalPages - 1;
-        }
-        
-        function goToPage(index) {
-            currentIndex = index;
-            const cardWidth = cards[0].offsetWidth + 24; // card width + gap
-            const offset = currentIndex * cardsPerView * cardWidth;
-            track.style.transform = `translateX(-${offset}px)`;
-            updateDots();
-            updateArrows();
-        }
-        
-        function nextPage() {
-            if (currentIndex < totalPages - 1) {
-                goToPage(currentIndex + 1);
-            }
-        }
-        
-        function prevPage() {
-            if (currentIndex > 0) {
-                goToPage(currentIndex - 1);
-            }
-        }
-        
-        leftArrow.addEventListener('click', prevPage);
-        rightArrow.addEventListener('click', nextPage);
-        
-        // Handle window resize
-        window.addEventListener('resize', function() {
-            const newCardsPerView = getCardsPerView();
-            if (newCardsPerView !== cardsPerView) {
-                cardsPerView = newCardsPerView;
-                totalPages = Math.ceil(cards.length / cardsPerView);
-                currentIndex = Math.min(currentIndex, totalPages - 1);
-                createDots();
-                goToPage(currentIndex);
+    if (navbar) {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(246, 241, 230, 0.97)';
+                navbar.style.boxShadow = '0 1px 0 rgba(18, 37, 28, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(246, 241, 230, 0.92)';
+                navbar.style.boxShadow = 'none';
             }
         });
-        
-        // Initialize carousel
-        createDots();
-        updateArrows();
     }
-    
-    // Service card expand functionality (legacy)
-    const expandBtns = document.querySelectorAll('.service-expand-btn');
-    if (expandBtns.length > 0) {
-        expandBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                const card = this.closest('.service-card');
-                const expanded = card.querySelector('.service-expanded');
-                const isActive = expanded.classList.contains('active');
-                
-                // Close all other expanded sections
-                document.querySelectorAll('.service-expanded.active').forEach(el => {
-                    el.classList.remove('active');
-                });
-                document.querySelectorAll('.service-expand-btn.active').forEach(el => {
-                    el.classList.remove('active');
-                    el.textContent = translations[currentLang]['services.more'];
-                });
-                
-                // Toggle current
-                if (!isActive) {
-                    expanded.classList.add('active');
-                    this.classList.add('active');
-                    this.textContent = translations[currentLang]['services.less'];
-                }
-            });
-        });
-    }
-    
+
     // Language Toggle
-    const langBtns = document.querySelectorAll('.lang-btn');
-    langBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
             const lang = this.getAttribute('data-lang');
             if (lang !== currentLang) {
                 updateLanguage(lang);
             }
         });
     });
-    
-    // Initialize language on page load
-    updateLanguage(currentLang);
-    
-    // Compact Services Grid functionality
-    const serviceCardsCompact = document.querySelectorAll('.service-card-compact');
-    const serviceDetailPanel = document.getElementById('serviceDetailPanel');
-    const serviceDetailContent = document.getElementById('serviceDetailContent');
-    const serviceDetailClose = document.querySelector('.service-detail-close');
-    
-    // Service data for detail panel
-    const serviceData = {
-        1: {
-            title: 'service1.title',
-            desc: 'service1.desc',
-            items: ['service1.li1', 'service1.li2', 'service1.li3', 'service1.li4', 'service1.li5']
-        },
-        2: {
-            title: 'service2.title',
-            desc: 'service2.desc',
-            items: ['service2.li1', 'service2.li2', 'service2.li3', 'service2.li4', 'service2.li5']
-        },
-        3: {
-            title: 'service3.title',
-            desc: 'service3.desc',
-            items: ['service3.li1', 'service3.li2', 'service3.li3', 'service3.li4', 'service3.li5']
-        },
-        4: {
-            title: 'service4.title',
-            desc: 'service4.desc',
-            items: ['service4.li1', 'service4.li2', 'service4.li3', 'service4.li4', 'service4.li5']
-        },
-        5: {
-            title: 'service5.title',
-            desc: 'service5.desc',
-            items: ['service5.li1', 'service5.li2', 'service5.li3', 'service5.li4', 'service5.li5']
-        },
-        6: {
-            title: 'service6.title',
-            desc: 'service6.desc',
-            items: ['service6.li1', 'service6.li2', 'service6.li3', 'service6.li4', 'service6.li5']
-        },
-        7: {
-            title: 'service7.title',
-            desc: 'service7.desc',
-            items: ['service7.li1', 'service7.li2', 'service7.li3', 'service7.li4', 'service7.li5']
-        },
-        8: {
-            title: 'service8.title',
-            desc: 'service8.desc',
-            items: ['service8.li1', 'service8.li2', 'service8.li3', 'service8.li4', 'service8.li5']
-        },
-        9: {
-            title: 'service9.title',
-            desc: 'service9.desc',
-            items: ['service9.li1', 'service9.li2', 'service9.li3', 'service9.li4', 'service9.li5']
-        },
-        10: {
-            title: 'service10.title',
-            desc: 'service10.desc',
-            items: ['service10.li1', 'service10.li2', 'service10.li3', 'service10.li4', 'service10.li5']
-        },
-        11: {
-            title: 'service11.title',
-            desc: 'service11.desc',
-            items: ['service11.li1', 'service11.li2', 'service11.li3', 'service11.li4', 'service11.li5']
-        },
-        12: {
-            title: 'service12.title',
-            desc: 'service12.desc',
-            items: ['service12.li1', 'service12.li2', 'service12.li3', 'service12.li4', 'service12.li5']
-        }
-    };
-    
-    function openServiceDetail(serviceNum) {
-        const data = serviceData[serviceNum];
-        if (!data) return;
-        
-        const t = translations[currentLang];
-        let itemsHtml = data.items.map(key => `<li>${t[key] || key}</li>`).join('');
-        
-        serviceDetailContent.innerHTML = `
-            <h3>${t[data.title] || data.title}</h3>
-            <p>${t[data.desc] || data.desc}</p>
-            <p><strong>${t['services.scope']}</strong></p>
-            <ul>${itemsHtml}</ul>
-        `;
-        
-        // Remove active from all cards
-        serviceCardsCompact.forEach(card => card.classList.remove('active'));
-        
-        // Add active to clicked card
-        const clickedCard = document.querySelector(`.service-card-compact[data-service="${serviceNum}"]`);
-        if (clickedCard) clickedCard.classList.add('active');
-        
-        serviceDetailPanel.classList.add('active');
-        
-        // Scroll to panel
-        setTimeout(() => {
-            serviceDetailPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }, 100);
-    }
-    
-    function closeServiceDetail() {
-        serviceDetailPanel.classList.remove('active');
-        serviceCardsCompact.forEach(card => card.classList.remove('active'));
-    }
-    
-    if (serviceCardsCompact.length > 0) {
-        serviceCardsCompact.forEach(card => {
-            card.addEventListener('click', function() {
-                const serviceNum = parseInt(this.getAttribute('data-service'));
-                openServiceDetail(serviceNum);
-            });
+
+    // Raport ESG - Zakres usługi expandable grid
+    initExpandGrid('raportScopeGrid', 'raportScopePanel', '.service-detail-close', renderRaportScopeDetail, 'raportScope');
+
+    // Większa rentowność - product expandable grid
+    initExpandGrid('profitGrid', 'profitPanel', '.service-detail-close', renderProfitProductDetail, 'profitProduct');
+
+    // Raport ESG - Kluczowe elementy raportu tab switcher
+    document.querySelectorAll('.raport-cat-tab').forEach(btn => {
+        btn.addEventListener('click', function () {
+            const cat = this.getAttribute('data-cat');
+            dynamicPanelState.raportCategory = cat;
+            renderRaportCategory(cat);
+        });
+    });
+
+    // Contact form -> mailto
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('cf-name').value.trim();
+            const email = document.getElementById('cf-email').value.trim();
+            const message = document.getElementById('cf-message').value.trim();
+
+            const subject = encodeURIComponent(`Zapytanie ze strony MMM Consulting – ${name}`);
+            const body = encodeURIComponent(`${message}\n\n—\n${name}\n${email}`);
+
+            window.location.href = `mailto:m.czarnecki@mmmconsulting.pl,m.wielkopolan@mmmconsulting.pl?subject=${subject}&body=${body}`;
         });
     }
-    
-    if (serviceDetailClose) {
-        serviceDetailClose.addEventListener('click', closeServiceDetail);
-    }
-    
+
+    // Home hero - rising light particles
+    initHeroParticles();
+
+    // Initialize language + dynamic content on page load
+    updateLanguage(currentLang);
+    renderRaportCategory(dynamicPanelState.raportCategory);
+
     // Intersection Observer for scroll animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
-    const observer = new IntersectionObserver(function(entries) {
+
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('is-visible');
             }
         });
     }, observerOptions);
-    
-    // Observe sections for animation
-    document.querySelectorAll('.about, .contact, .services, .capabilities').forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(30px)';
-        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(section);
-    });
-    
-    // Counter Animation for Capabilities Section
-    const counters = document.querySelectorAll('.capability-counter');
-    let countersAnimated = false;
-    
-    function animateCounters() {
-        if (countersAnimated) return;
-        
-        counters.forEach(counter => {
-            const target = parseInt(counter.getAttribute('data-target'));
-            const duration = 2000; // 2 seconds
-            const increment = target / (duration / 16); // 60fps
-            let current = 0;
-            
-            const updateCounter = () => {
-                current += increment;
-                if (current < target) {
-                    counter.textContent = Math.floor(current);
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    counter.textContent = target;
-                }
-            };
-            
-            updateCounter();
-        });
-        
-        countersAnimated = true;
-    }
-    
-    // Observer for capabilities section to trigger counter animation
-    const capabilitiesSection = document.querySelector('.capabilities');
-    if (capabilitiesSection) {
-        const counterObserver = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounters();
-                    startTypingAnimation();
-                }
-            });
-        }, { threshold: 0.3 });
-        
-        counterObserver.observe(capabilitiesSection);
-    }
-    
-    // Typing Animation for Industries
-    const industriesPL = ['FMCG', 'Żywność', 'Automotive', 'Rolnictwo', 'Energia', 'Finanse'];
-    const industriesEN = ['FMCG', 'Food', 'Automotive', 'Agriculture', 'Energy', 'Finance'];
-    let industryIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingStarted = false;
-    const typingElement = document.getElementById('typing-industries');
-    
-    function getIndustries() {
-        return currentLang === 'pl' ? industriesPL : industriesEN;
-    }
-    
-    function startTypingAnimation() {
-        if (typingStarted || !typingElement) return;
-        typingStarted = true;
-        typeIndustry();
-    }
-    
-    function typeIndustry() {
-        const industries = getIndustries();
-        const currentIndustry = industries[industryIndex];
-        
-        if (isDeleting) {
-            charIndex--;
-            typingElement.textContent = currentIndustry.substring(0, charIndex);
-        } else {
-            charIndex++;
-            typingElement.textContent = currentIndustry.substring(0, charIndex);
-        }
-        
-        let typeSpeed = isDeleting ? 50 : 100;
-        
-        if (!isDeleting && charIndex === currentIndustry.length) {
-            // Pause at end of word
-            typeSpeed = 2000;
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            industryIndex = (industryIndex + 1) % industries.length;
-            typeSpeed = 500;
-        }
-        
-        setTimeout(typeIndustry, typeSpeed);
-    }
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 });

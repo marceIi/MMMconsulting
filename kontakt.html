@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – MMM Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="page-kontakt">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="imgs/logommm.png" alt="MMM Consulting Logo">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="outsourced-esg.html" class="nav-link" data-i18n="nav.outsourced">Outsourced ESG</a></li>
+                <li><a href="raport-esg.html" class="nav-link" data-i18n="nav.raport">Raport ESG</a></li>
+                <li><a href="redukcja.html" class="nav-link" data-i18n="nav.redukcja">Redukcja kosztów i emisji</a></li>
+                <li><a href="rentownosc.html" class="nav-link" data-i18n="nav.rentownosc">Większa rentowność</a></li>
+                <li><a href="dlaczego-my.html" class="nav-link" data-i18n="nav.dlaczegomy">Dlaczego my</a></li>
+                <li><a href="kontakt.html" class="nav-link" data-i18n="nav.kontakt">Kontakt</a></li>
+            </ul>
+            <div class="lang-toggle">
+                <button class="lang-btn active" data-lang="pl">PL</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ Kontakt i formularz do pytań ============ -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="contact.title">Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="contact-icon"><img src="imgs/icon_location.png" alt="Adres"></div>
+                        <div class="contact-details">
+                            <p class="address-text" data-i18n="contact.addressValue">Grzybowska 87, 00-844 Warszawa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal">
+                    <h3 class="contact-form-title" data-i18n="contact.form.title">Masz pytanie? Napisz do nas</h3>
+                    <p class="contact-form-subtitle" data-i18n="contact.form.subtitle">Odpowiadamy na wszystkie zapytania osobiście – zwykle w ciągu 1 dnia roboczego.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="cf-name" data-i18n="contact.form.name">Imię i nazwisko</label>
+                            <input type="text" id="cf-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-email" data-i18n="contact.form.email">Adres e-mail</label>
+                            <input type="email" id="cf-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-message" data-i18n="contact.form.message">Wiadomość</label>
+                            <textarea id="cf-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit" data-i18n="contact.form.submit">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2026 MMM Consulting. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -3,317 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMMconsulting</title>
+    <title>MMM Consulting</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#top" class="logo">
-                <img src="imgs/logommm.png" alt="MMM Consulting Logo">
-            </a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#services" class="nav-link" data-i18n="nav.services">Nasze Usługi</a></li>
-                <li><a href="#about" class="nav-link" data-i18n="nav.about">O nas</a></li>
-                <li><a href="#team" class="nav-link" data-i18n="nav.team">Zespół</a></li>
-                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Adres</a></li>
-            </ul>
-            <div class="lang-toggle">
-                <button class="lang-btn active" data-lang="pl">PL</button>
-                <span class="lang-divider">|</span>
-                <button class="lang-btn" data-lang="en">EN</button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section - Compact -->
-    <section class="hero hero-compact" id="top">
+<body class="page-home">
+    <!-- ============ Home Hero ============ -->
+    <section class="home-hero">
         <div class="hero-background">
             <img src="imgs/landscape-1.jpg" alt="Wind turbines in green landscape" class="hero-bg-image">
             <div class="hero-overlay"></div>
         </div>
-        <div class="hero-content">
-            <h1 class="hero-title" data-i18n="hero.title">Rentowny, odporny i zrównoważony biznes</h1>
-            <div class="hero-tagline" data-i18n="hero.tagline">Kompleksowe podejście do zrównoważonego rozwoju</div>
-            <p class="hero-subtitle" data-i18n="hero.subtitle">
-                Jeśli chcesz wzmacniać przewagi konkurencyjne Twojej firmy, aby pozwalały na szybszy, 
-                bardziej zyskowny i zgodny z zasadami zrównoważonej transformacji rozwój, postaw na:
-            </p>
-            
-            <ul class="benefits-list">
-                <li data-i18n="benefits.1">wzmocnienie stabilności i rentowności dzięki lepszej kontroli kosztów energii, surowców i materiałów oraz skutecznemu zarządzaniu ryzykiem klimatycznym i regulacyjnym;</li>
-                <li data-i18n="benefits.2">budowanie realnej przewagi w sprzedaży i przetargach u kluczowych klientów w oparciu o standardy zrównoważonego rozwoju;</li>
-                <li data-i18n="benefits.3">otwarcie dostępu do dotacji, ulg i korzystniejszego finansowania inwestycji rozwojowych dzięki spełnianiu kryteriów środowiskowych;</li>
-                <li data-i18n="benefits.4">wdrożenie przejrzystego, mierzalnego i audytowalnego planu dekarbonizacji oraz poprawę efektywności operacyjnej – zarówno wewnątrz firmy, jak i w całym łańcuchu dostaw;</li>
-                <li data-i18n="benefits.5">zapewnienie pełnej zgodności z wymaganiami regulacyjnymi i raportowymi w zakresie adekwatnym do skali oraz profilu Twojej działalności.</li>
-            </ul>
+        <div class="home-particles"></div>
+        <div class="home-hero-content">
+            <img src="imgs/logommm.svg" alt="MMM Consulting" class="home-logo">
+            <p class="home-tagline" data-i18n="home.tagline">Zamieniamy wymagania ESG w wymierne oszczędności, wyższą sprzedaż i przewagę konkurencyjną.</p>
+            <p class="home-subtitle" data-i18n="home.subtitle">Outsourcing ESG, raportowanie CSRD i redukcja kosztów dla firm produkcyjnych i FMCG.</p>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
+    <!-- ============ Category Navigation ============ -->
+    <section class="home-categories">
         <div class="container">
-            <h2 class="section-title" data-i18n="services.title">Nasze Usługi</h2>
-            <!-- Services Grid - wszystkie 12 usług widoczne -->
-            <div class="services-grid-compact">
-                <!-- Service 1 -->
-                <div class="service-card-compact" data-service="1">
-                    <div class="service-number-small">1</div>
-                    <h3 class="service-title-compact" data-i18n="service1.short">Analiza luk regulacyjnych ESG</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="service-card-compact" data-service="2">
-                    <div class="service-number-small">2</div>
-                    <h3 class="service-title-compact" data-i18n="service2.short">Analiza podwójnej istotności</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="service-card-compact" data-service="3">
-                    <div class="service-number-small">3</div>
-                    <h3 class="service-title-compact" data-i18n="service3.short">Strategia zrównoważonego rozwoju</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 4 -->
-                <div class="service-card-compact" data-service="4">
-                    <div class="service-number-small">4</div>
-                    <h3 class="service-title-compact" data-i18n="service4.short">Ślad węglowy i ślad produktu</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 5 -->
-                <div class="service-card-compact" data-service="5">
-                    <div class="service-number-small">5</div>
-                    <h3 class="service-title-compact" data-i18n="service5.short">Ścieżki i plan dekarbonizacji</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 6 -->
-                <div class="service-card-compact" data-service="6">
-                    <div class="service-number-small">6</div>
-                    <h3 class="service-title-compact" data-i18n="service6.short">Dekarbonizacja dostawców</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 7 -->
-                <div class="service-card-compact" data-service="7">
-                    <div class="service-number-small">7</div>
-                    <h3 class="service-title-compact" data-i18n="service7.short">Taksonomia UE</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 8 -->
-                <div class="service-card-compact" data-service="8">
-                    <div class="service-number-small">8</div>
-                    <h3 class="service-title-compact" data-i18n="service8.short">Dotacje i finansowanie</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 9 -->
-                <div class="service-card-compact" data-service="9">
-                    <div class="service-number-small">9</div>
-                    <h3 class="service-title-compact" data-i18n="service9.short">Raport zrównoważonego rozwoju</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 10 -->
-                <div class="service-card-compact" data-service="10">
-                    <div class="service-number-small">10</div>
-                    <h3 class="service-title-compact" data-i18n="service10.short">Offsetowanie emisji</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 11 -->
-                <div class="service-card-compact" data-service="11">
-                    <div class="service-number-small">11</div>
-                    <h3 class="service-title-compact" data-i18n="service11.short">Partner ESG (abonament)</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-                
-                <!-- Service 12 -->
-                <div class="service-card-compact" data-service="12">
-                    <div class="service-number-small">12</div>
-                    <h3 class="service-title-compact" data-i18n="service12.short">Rozwój firmy</h3>
-                    <span class="service-expand-icon">+</span>
-                </div>
-            </div>
-            
-            <!-- Service Detail Panel -->
-            <div class="service-detail-panel" id="serviceDetailPanel">
-                <button class="service-detail-close" aria-label="Zamknij">&times;</button>
-                <div class="service-detail-content" id="serviceDetailContent">
-                    <!-- Content will be loaded dynamically -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Description Section -->
-    <section class="hero-description-section" id="description">
-        <div class="container">
-            <div class="hero-description">
-                <p data-i18n="hero.desc1">Właśnie na tych filarach opieramy współpracę z naszymi klientami, wspierając ich w drodze do zrównoważonego i zyskownego rozwoju.</p>
-                <p data-i18n="hero.desc2">Pomagamy zarządom, właścicielom, CFO i CSO budować stabilny, rentowny i odporny na zmiany klimatyczne biznes. Projektujemy strategię zrównoważonego rozwoju, mierzalny ślad węglowy (w tym ślad produktów), ścieżki i plany dekarbonizacji, podejście do ryzyk klimatycznych oraz raport zrównoważonego rozwoju zgodny z regulacjami i dopasowany do profilu firmy.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Capabilities Section - Subtle -->
-    <section class="capabilities capabilities-subtle" id="capabilities">
-        <div class="container">
-            <h2 class="section-title" data-i18n="capabilities.title">Nasze Kompetencje</h2>
-            <div class="capabilities-grid">
-                <!-- Capability 1 - Revenue -->
-                <div class="capability-item">
-                    <div class="capability-counter" data-target="3">0</div>
-                    <div class="capability-suffix">+ MLD PLN</div>
-                    <div class="capability-label" data-i18n="capabilities.revenue">Przychody Klientów</div>
-                    <div class="capability-sublabel" data-i18n="capabilities.revenue.sub">na rok</div>
-                </div>
-                
-                <!-- Capability 2 - Projects -->
-                <div class="capability-item">
-                    <div class="capability-number-row">
-                        <span class="capability-counter" data-target="17">0</span><span class="capability-plus">+</span>
-                    </div>
-                    <div class="capability-label" data-i18n="capabilities.projects">Projektów ESG</div>
-                </div>
-                
-                <!-- Capability 3 - Implementations -->
-                <div class="capability-item">
-                    <div class="capability-number-row">
-                        <span class="capability-counter" data-target="12">0</span><span class="capability-plus">+</span>
-                    </div>
-                    <div class="capability-label" data-i18n="capabilities.implementations">Wdrożeń</div>
-                </div>
-                
-                <!-- Capability 4 - Industries -->
-                <div class="capability-item">
-                    <div class="capability-industries">
-                        <span class="capability-industries-title" data-i18n="capabilities.industries">Branże</span>
-                        <div class="typing-wrapper">
-                            <span class="typing-text" id="typing-industries"></span><span class="typing-cursor">|</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title" data-i18n="about.title">O nas</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="imgs/nature-360-portrait-1.jpg" alt="Aerial view of sustainability landscape" class="placeholder-image">
-                </div>
-                <div class="about-text">
-                    <p data-i18n="about.p1">Jesteśmy jednocześnie praktykami biznesu i konsultantami z wieloletnim doświadczeniem.
-                    Łączymy realne doświadczenia w prowadzeniu i zarządzaniu firmami w Polsce i za granicą z
-                    perspektywą doradczą, co pozwala nam projektować rozwiązania, które da się wdrożyć w
-                    praktyce, a nie tylko opisać w prezentacji.</p>
-                    <p data-i18n="about.p2">Na co dzień współpracujemy z regulatorami na poziomie Unii Europejskiej (w tym instytucjami
-                    odpowiedzialnymi za regulacje i standardy raportowania niefinansowego), organizacjami
-                    sektorowymi, europejskimi bankami oraz firmami doradczymi. Dzięki temu rozumiemy, jak
-                    wymagania regulacyjne ESG przekładają się na oczekiwania rynku i kryteria finansowania
-                    przedsiębiorstw.</p>
-                    <p data-i18n="about.p3">Naszą ofertę opieramy na doświadczeniu w zarządzaniu firmami produkcyjnymi, handlowymi i
-                    usługowymi. Mówimy prostym i konkretnym językiem – bez korporacyjnej nowomowy –
-                    koncentrując się na praktycznym zrozumieniu wyzwań transformacji ESG, szukaniu rozwiązań
-                    oraz ich skutecznym wdrażaniu.</p>
-                    <p data-i18n="about.p4">Wierzymy, że rację ma nie ten, kto miał ją na początku drogi, lecz ten, kto potrafił przełożyć ją na
-                    konkretne działania i wyniki. Efektywność wdrożonych działań mierzymy przede wszystkim
-                    rezultatem finansowym i większą odpornością biznesu, a nie liczbą slajdów i raportów.</p>
-                    <p data-i18n="about.p5">Pomagamy łączyć tematykę ESG ze strategią i długoterminowymi celami przedsiębiorstwa, które
-                    szuka najlepszych dróg rozwoju w dynamicznie zmieniającym się otoczeniu regulacyjnym i
-                    rynkowym. Nasze doświadczenie pokazuje, że firmy, które zintegrowały ESG ze strategicznym i
-                    operacyjnym zarządzaniem biznesem, budują trwałą przewagę konkurencyjną.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team" id="team">
-        <div class="container">
-            <h2 class="section-title" data-i18n="team.title">Nasz Zespół</h2>
-            <div class="team-grid">
-                <!-- Team Member 1 -->
-                <div class="team-member">
-                    <div class="team-photo">
-                        <img src="imgs/pfp_czarnecki.png" alt="Marcin Czarnecki" class="zoomed">
-                    </div>
-                    <div class="team-info">
-                        <h3 class="team-name">Marcin Czarnecki</h3>
-                        <p class="team-bio" data-i18n="team.czarnecki.bio">Ekspert w dziedzinie zarządzania i rozwoju firm FMCG Food w Polsce i Europie: wieloletni Prezes Zarządu, Dyrektor Generalny i Członek Rad Nadzorczych firm Raisio Polska, Danone, Bongrain (Grupa Savencia), Rigas Piensaimnieks (Ryga, Łotwa), Grupa Delicpol, Bakalland SA, Bielenda SA, Sonko / Oshee Group, współzałożyciel PROTEINrise start-upu z branży foodtech oraz MMM Consulting łączącą strategie firm z tematyką ESG.</p>
-                        <p class="team-bio" data-i18n="team.czarnecki.bio2">Mentor w programach Mentors4Starters oraz Challenge Lab, członek Rady Ekspertów kierunku Prawo w Biznesie, KUL. Obszary specjalizacji to sprzedaż i marketing, innowacyjność, zarządzanie procesami i zmianą.</p>
-                        <p class="team-bio" data-i18n="team.czarnecki.bio3">Współtwórca sukcesu marek produktów FMCG w Polsce i Europie: Galbani (Wschodnia i Centralna Europa); Sekret Mnicha, Tartare, Turek (Polska); Zhivinka (Rosja i Ukraina), Zvenigora (Ukraina), Delisana (Polska i Europa), Łomża (Polska), Cleanic (Polska i Europa), Sonko (Polska).</p>
-                        <p class="team-bio" data-i18n="team.czarnecki.bio4">Absolwent Uniwersytetu Warszawskiego, European University (MBA) w Barcelonie, studiów podyplomowych w London Business School, INSEAD, Wharton Business School, oraz studiów doktoranckich na wydziale Zarządzania i Finansów Szkoły Głównej Handlowej (SGH).</p>
-                        <p class="team-bio" data-i18n="team.czarnecki.bio5">Prywatnie pasjonat tenisa, golfa i narciarstwa alpejskiego.</p>
-                        <div class="team-contact">
-                            <a href="tel:+48505829720" class="team-contact-item">
-                                <span class="team-contact-icon">📞</span>
-                                <span>+48 505 829 720</span>
-                            </a>
-                            <a href="mailto:m.czarnecki@mmmconsulting.pl" class="team-contact-item">
-                                <span class="team-contact-icon">📧</span>
-                                <span>m.czarnecki@mmmconsulting.pl</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Team Member 2 -->
-                <div class="team-member">
-                    <div class="team-photo team-photo-white-bg">
-                        <img src="imgs/pfp_wielkopolan.png" alt="Maciej Wielkopolan">
-                    </div>
-                    <div class="team-info">
-                        <h3 class="team-name">Maciej Wielkopolan</h3>
-                        <p class="team-bio" data-i18n="team.wielkopolan.bio">Praktyk w prowadzeniu biznesu z 30 letnim doświadczeniem. Dyrektor Generalny / CEO firm z branży szeroko pojętego marketingu w polskich i międzynarodowych przedsięwzięciach.</p>
-                        <p class="team-bio" data-i18n="team.wielkopolan.bio2">Ekspert w zarządzaniu z wielokulturowym doświadczeniem obejmującym zarządzanie firmami i operacjami, a także sprzedażą i marketingiem. Silny lider z dużymi umiejętnościami w planowaniu strategicznym, z doświadczeniem w skutecznym wdrażaniu planów działania i osiąganiu doskonałych wyników. Konsultant i Interim Manager.</p>
-                        <p class="team-bio" data-i18n="team.wielkopolan.bio3">Doradzał wielu firmom od fazy ich powstania do pełnego rozwoju. Założył kilkanaście spółek i z sukcesem rozwijał je w następnych latach. Zrealizował kilkaset projektów, międzynarodowych i lokalnych. Wprowadzał na rynek polski płatną telewizję Canal+, gdzie pełnił funkcję Dyrektora Zarządzającego jednej ze spółek grupy Canal+ Polska. Wieloletni Prezes Polskiego Stowarzyszenia Marketingu SMB.</p>
-                        <p class="team-bio" data-i18n="team.wielkopolan.bio4">Absolwent Ecole Superieure de Commerce et de Management (ESA3) w Paryżu (Francja). Absolwent wydziału Elektroniki Politechniki Wrocławskiej. Stypendysta rządu francuskiego w Ecole Nationale Superieure des Telecommunications w Paryżu i doktorant Ecole Pratique des Hautes Etudes w Paryżu.</p>
-                        <div class="team-contact">
-                            <a href="tel:+48501113099" class="team-contact-item">
-                                <span class="team-contact-icon">📞</span>
-                                <span>+48 501 113 099</span>
-                            </a>
-                            <a href="mailto:m.wielkopolan@mmmconsulting.pl" class="team-contact-item">
-                                <span class="team-contact-icon">📧</span>
-                                <span>m.wielkopolan@mmmconsulting.pl</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title" data-i18n="contact.title">Adres</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon"><img src="imgs/icon_location.png" alt="Adres"></div>
-                        <div class="contact-details">
-                            <p class="address-text" data-i18n="contact.addressValue">Grzybowska 87, 00-844 Warszawa</p>
-                        </div>
-                    </div>
-                </div>
+            <p class="home-categories-hint" data-i18n="home.hint">Wybierz obszar, który Cię interesuje</p>
+            <div class="category-grid">
+                <a href="outsourced-esg.html" class="category-card">
+                    <span class="category-card-number">01</span>
+                    <h2 class="category-card-title" data-i18n="nav.outsourced">Outsourced ESG</h2>
+                    <p class="category-card-desc" data-i18n="home.card.outsourced.desc">Pełen outsourcing działu ESG w modelu abonamentowym.</p>
+                    <span class="category-card-arrow">&rarr;</span>
+                </a>
+                <a href="raport-esg.html" class="category-card">
+                    <span class="category-card-number">02</span>
+                    <h2 class="category-card-title" data-i18n="nav.raport">Raport ESG</h2>
+                    <p class="category-card-desc" data-i18n="home.card.raport.desc">Raporty zrównoważonego rozwoju zgodne z CSRD i ESRS.</p>
+                    <span class="category-card-arrow">&rarr;</span>
+                </a>
+                <a href="redukcja.html" class="category-card">
+                    <span class="category-card-number">03</span>
+                    <h2 class="category-card-title" data-i18n="nav.redukcja">Redukcja kosztów i emisji</h2>
+                    <p class="category-card-desc" data-i18n="home.card.redukcja.desc">Redukcja kosztów energii, materiałów, opakowań i emisji.</p>
+                    <span class="category-card-arrow">&rarr;</span>
+                </a>
+                <a href="rentownosc.html" class="category-card">
+                    <span class="category-card-number">04</span>
+                    <h2 class="category-card-title" data-i18n="nav.rentownosc">Większa rentowność</h2>
+                    <p class="category-card-desc" data-i18n="home.card.rentownosc.desc">Wyższa EBITDA dzięki wykorzystaniu ESG jako przewagi konkurencyjnej.</p>
+                    <span class="category-card-arrow">&rarr;</span>
+                </a>
+                <a href="dlaczego-my.html" class="category-card">
+                    <span class="category-card-number">05</span>
+                    <h2 class="category-card-title" data-i18n="nav.dlaczegomy">Dlaczego my</h2>
+                    <p class="category-card-desc" data-i18n="home.card.dlaczegomy.desc">Poznaj zespół i podejście MMM Consulting.</p>
+                    <span class="category-card-arrow">&rarr;</span>
+                </a>
+                <a href="kontakt.html" class="category-card">
+                    <span class="category-card-number">06</span>
+                    <h2 class="category-card-title" data-i18n="nav.kontakt">Kontakt</h2>
+                    <p class="category-card-desc" data-i18n="home.card.kontakt.desc">Skontaktuj się i zadaj nam pytanie.</p>
+                    <span class="category-card-arrow">&rarr;</span>
+                </a>
             </div>
         </div>
     </section>
@@ -321,7 +72,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p data-i18n="footer.copyright">&copy; 2025 MMM Consulting. Wszystkie prawa zastrzeżone.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 MMM Consulting. Wszystkie prawa zastrzeżone.</p>
         </div>
     </footer>
 
